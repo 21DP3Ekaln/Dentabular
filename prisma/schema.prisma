@@ -1,0 +1,157 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+//npx prisma push
+//npx prisma init --datasource-provider sqlite
+//npx prisma db push 
+//npx prisma studio
+//jpork2021@gmail.com
+//npx ts-node --compiler-options '{"module":"CommonJS"}' src/lib/import-termini.ts - populate the database
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Language {
+  id                    Int                     @id @default(autoincrement())
+  code                  String                  // ISO code (e.g., 'lv', 'en')
+  name                  String                  // Language name
+  isDefault             Boolean                 @default(false)
+  isEnabled             Boolean                 @default(true)
+  termVersionTranslations TermVersionTranslation[]
+  categoryTranslations   CategoryTranslation[]
+  labelTranslations      LabelTranslation[]
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  email         String    @unique
+  fullName      String
+  isAdmin       Boolean   @default(false)
+  isDisabled    Boolean   @default(false)
+  preferences   String    // JSON string storing user preferences
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  comments      Comment[] 
+  favorites     Favorite[]
+}
+
+model Category {
+  id              Int                 @id @default(autoincrement())
+  createdAt       DateTime            @default(now())
+  translations    CategoryTranslation[]
+  terms           Termini[]
+}
+
+model CategoryTranslation {
+  category        Category            @relation(fields: [categoryId], references: [id])
+  categoryId      Int
+  language        Language            @relation(fields: [languageId], references: [id])
+  languageId      Int
+  name            String
+  
+  @@id([categoryId, languageId])
+}
+
+model Label {
+  id              Int                 @id @default(autoincrement())
+  createdAt       DateTime            @default(now())
+  translations    LabelTranslation[]
+  terms           TerminiLabel[]
+}
+
+model LabelTranslation {
+  label           Label               @relation(fields: [labelId], references: [id])
+  labelId         Int
+  language        Language            @relation(fields: [languageId], references: [id])
+  languageId      Int
+  name            String
+  
+  @@id([labelId, languageId])
+}
+
+model Termini {
+  id              Int           @id @default(autoincrement())
+  identifier      String        @unique
+  activeVersion   TermVersion?  @relation("ActiveVersion", fields: [activeVersionId], references: [id])
+  activeVersionId Int?         @unique  // Optional as it might be null when first creating a term
+  category        Category      @relation(fields: [categoryId], references: [id])
+  categoryId      Int
+  createdAt       DateTime      @default(now())
+  versions        TermVersion[] @relation("Versions")
+  comments        Comment[]
+  favoritedBy     Favorite[]
+  labels          TerminiLabel[]
+}
+
+model TermVersion {
+  id              Int                     @id @default(autoincrement())
+  status          String                  // DRAFT, PUBLISHED, or ARCHIVED
+  versionNumber   Int
+  readyToPublish  Boolean                 @default(false)
+  createdAt       DateTime                @default(now())
+  publishedAt     DateTime?
+  archivedAt      DateTime?
+  term            Termini                 @relation("Versions", fields: [termId], references: [id])
+  termId          Int
+  translations    TermVersionTranslation[]
+  activeForTerm   Termini?                @relation("ActiveVersion")
+}
+
+model TermVersionTranslation {
+  termVersion     TermVersion             @relation(fields: [termVersionId], references: [id])
+  termVersionId   Int
+  language        Language                @relation(fields: [languageId], references: [id])
+  languageId      Int
+  name            String
+  description     String
+  
+  @@id([termVersionId, languageId])
+  @@index([name]) // Add index for faster name searches
+  @@index([description]) // Add index for faster description searches
+  // Optional: Add a composite index if you often search name AND description together,
+  // though individual indexes are usually sufficient for OR conditions.
+  // @@index([name, description]) 
+}
+
+model TerminiLabel {
+  term            Termini                 @relation(fields: [termId], references: [id])
+  termId          Int
+  label           Label                   @relation(fields: [labelId], references: [id])
+  labelId         Int
+  createdAt       DateTime                @default(now())
+  
+  @@id([termId, labelId])
+}
+
+model Comment {
+  id              Int       @id @default(autoincrement())
+  content         String
+  isClosed        Boolean   @default(false)
+  isDeleted       Boolean   @default(false)
+  term            Termini   @relation(fields: [termId], references: [id])
+  termId          Int
+  user            User      @relation(fields: [userId], references: [id])
+  userId          Int
+  parentComment   Comment?  @relation("ResponseToComment", fields: [parentCommentId], references: [id], onDelete: Cascade)
+  parentCommentId Int?
+  responses       Comment[] @relation("ResponseToComment")
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Favorite {
+  id              Int       @id @default(autoincrement())
+  term            Termini   @relation(fields: [termId], references: [id])
+  termId          Int
+  user            User      @relation(fields: [userId], references: [id])
+  userId          Int
+  createdAt       DateTime  @default(now())
+  
+  @@unique([userId, termId])
+}

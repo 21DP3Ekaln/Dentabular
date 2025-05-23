@@ -1,0 +1,983 @@
+{
+  "app": {
+    "name": "Dentabular"
+  },
+  "navigation": {
+    "home": "Sākums",
+    "profile": "Profils",
+    "admin_panel": "Administrācijas panelis",
+    "categories": "Kategorijas",
+    "favorites": "Favorīti",
+    "recently_added": "Nesen pievienotie",
+    "sign_in": "Ielogoties",
+    "back_to_admin": "Atpakaļ uz administrācijas paneli" 
+
+  },
+  "categories": {
+    "title": "Kategorijas",
+    "description": "Pārlūkojiet zobārstniecības terminoloģiju pēc kategorijas, lai atrastu tieši to, ko meklējat.",
+    "browse_terms": "Pārlūkot terminus",
+    "search_placeholder": "Meklēt kategorijas...",
+    "no_results": "Netika atrastas kategorijas, kas atbilstu '{searchTerm}'"
+  },
+  "CategoriesPage": {
+    "title": "Izpētīt kategorijas",
+    "description": "Pārlūkojiet zobārstniecības terminoloģiju pēc kategorijas, lai atrastu tieši to, ko meklējat.",
+    "browseTerms": "Pārlūkot terminus",
+    "unnamedCategory": "Nenosaukta kategorija"
+  },
+  "CategoryPage": {
+    "description": "Pārlūkojiet zobārstniecības terminoloģiju kategorijā {category}.",
+    "showingTerms": "Rāda {count} {count, plural, one {terminu} other {terminus}} kategorijā {category}",
+    "noTermsTitle": "Termini nav atrasti",
+    "noTermsDescription": "Pašlaik kategorijā {category} nav pieejamu terminu.",
+    "backToCategories": "Atpakaļ uz kategorijām",
+    "loadMore": "Ielādēt vairāk terminu",
+    "uncategorized": "Bez kategorijas",
+    "showingResults": "Tiek rādīti {count} {count, plural, one {rezultāts} other {rezultāti}} vaicājumam '{query}' kategorijā {category}"
+  },
+  "search": {
+    "search_placeholder": "Meklēt...",
+    "search_placeholder_category": "Meklēt terminus kategorijā {category}...",
+    "searching": "Meklē...",
+    "no_results": "Rezultāti netika atrasti",
+    "no_results_description": "Mēs nevarējām atrast nevienu terminu, kas atbilstu jūsu meklēšanai. Lūdzu, mēģiniet citus atslēgvārdus vai pārlūkojiet mūsu kategorijas.",
+    "no_results_description_category": "Jūsu meklēšana vaicājumam '{query}' kategorijā {category} neatbilda nevienam terminam. Mēģiniet citus atslēgvārdus.",
+    "search_results": "Meklēšanas rezultāti",
+    "featured_terms": "Piedāvātie termini",
+    "loading_terms": "Ielādē terminus...",
+    "clear_search": "Notīrīt meklēšanu"
+  },
+  "hero": {
+    "title": "Zobārstniecības terminoloģijas datubāze",
+    "subtitle": "Jūsu visaptverošais zobārstniecības terminoloģijas resurss latviešu un angļu valodās, atvieglojot jebkuru izpēti."
+  },
+  "actions": {
+    "browse_categories": "Pārlūkot kategorijas",
+    "sign_in": "Ielogoties",
+    "view_all": "Skatīt visus →",
+    "show_more": "Rādīt vairāk",
+    "loading": "Ielādē...",
+    "view_details": "Skatīt detaļas",
+    "export_to_pdf": "Eksportēt uz PDF",
+    "exporting": "Eksportē...",
+    "font_loading": "Fonts vēl ielādējas. Lūdzu, mēģiniet vēlreiz pēc brīža.",
+    "loading_font": "Ielādē fontu...",
+    "font_loading_wait": "Fonts vēl tiek ielādēts. Lūdzu, uzgaidiet.",
+    "font_load_error": "Neizdevās ielādēt fontu eksportēšanai.",
+    "failed_to_generate": "Neizdevās izveidot PDF. Lūdzu, mēģiniet vēlreiz."
+  },
+  "term_view": {
+    "no_translation": "Tulkojums nav pieejams",
+    "no_description": "Apraksts nav pieejams",
+    "uncategorized": "Bez kategorijas",
+    "add_to_favorites": "Pievienot favorītiem",
+    "remove_from_favorites": "Noņemt no favorītiem",
+    "sign_in_to_add": "Ielogojieties, lai pievienotu favorītiem",
+    "favorited": "Favorītos",
+    "new": "Jauns"
+  },
+  "language": {
+    "lv": "LV",
+    "en": "EN",
+    "both": "LV | EN"
+  },
+  "content_display_language": "Pārslēgt satura attēlošanas valodu",
+  "stats": {
+    "terms_count": "500+",
+    "terms_label": "Zobārstniecības termini",
+    "languages_count": "2",
+    "languages_label": "Valodas",
+    "price": "Bezmaksas",
+    "price_label": "Resurss",
+    "updates": "Ikdienas",
+    "updates_label": "Atjauninājumi"
+  },
+  "term_display": {
+    "show_language": "Rādīt valodu",
+    "labels": "Iezīmes"
+  },
+  "profile": {
+    "welcome": "Laipni lūgti savā profilā",
+    "sign_in_description": "Ielogojieties, lai piekļūtu saviem favorītiem, sekotu savai aktivitātei un piedalītos mūsu zobārstniecības terminoloģijas datubāzē.",
+    "sign_in_google": "Ielogoties ar Google",
+    "sign_out": "Izrakstīties",
+    "your_activity": "Mana aktivitāte",
+    "your_favorites": "Mani favorīti",
+    "recent_comments": "Nesenie komentāri",
+    "favorites_count": "Jūs esat saglabājis {count} {count, plural, one {terminu} other {terminus}} favorītos.",
+    "no_favorites": "Jūs vēl neesat pievienojis nevienu favorītu.",
+    "view_all_favorites": "Skatīt visus favorītus",
+    "no_comments": "Jūs vēl neesat pievienojis nevienu komentāru.",
+    "view_all_comments": "Skatīt visus komentārus",
+    "resolved": "Atrisināts",
+    "open": "Atvērts",
+    "favorites": "Favorīti",
+    "comments": "Komentāri",
+    "user": "Lietotājs",
+    "favorite_dental_terms": "Mani favorītu zobārstniecības termini",
+    "exported_on": "Eksportēts",
+    "page": "Lapa",
+    "of": "no",
+    "exported_from": "Eksportēts no Dentabular - Zobārstniecības terminoloģijas datubāze",
+    "favorites_description": "Jūs esat saglabājis {count} {count, plural, one {terminu} other {terminus}} favorītos."
+  },
+  "footer": {
+    "description": "Visaptverošs divvalodu resurss zobārstniecības profesionāļiem un studentiem.",
+    "quick_links": "Ātrās saites",
+    "account": "Konts",
+    "my_profile": "Mans profils",
+    "my_favorites": "Mani favorīti",
+    "dental_terminology": "Zobārstniecības terminoloģija",
+    "copyright": "© 2025 Zobārstniecības terminoloģija. Visas tiesības aizsargātas.",
+    "admin": "Administrācija"
+  },
+  "recently_added": {
+    "description": "Sekojiet līdzi jaunākajiem papildinājumiem mūsu zobārstniecības terminoloģijas datubāzē.",
+    "last_updated": "Pēdējais atjauninājums",
+    "showing_terms": "Rāda {count} nesen pievienotus terminus",
+    "no_terms_title": "Nav nesenu terminu",
+    "no_terms_description": "Pašlaik nav nesen pievienotu terminu. Vēlāk apskatiet atjauninājumus mūsu zobārstniecības terminoloģijas datubāzē."
+  },
+  "term": {
+    "untitled": "Nenosaukts termins"
+  },
+  "category": {
+    "uncategorized": "Bez kategorijas",
+    "category": "Kategorija"
+  },
+  "labels": {
+    "labels": "Iezīmes",
+    "no_labels": "Nav iezīmju"
+  },
+  "common": {
+    "anonymous": "Anonīms",
+    "copyright": "© 2025 Zobārstniecības terminoloģija. Visas tiesības aizsargātas.",
+    "closeNotification": "Aizvērt paziņojumu",
+    "clearSearch": "Notīrīt meklēšanu",
+    "errorTitle": "Kļūda",
+    "edit": "Rediģēt",
+    "delete": "Dzēst",
+    "error": {
+      "noLanguagesConfigured": "Sistēmā nav konfigurētu valodu. Lūdzu, sazinieties ar administratoru."
+    },
+    "tryAgain": "Mēģināt vēlreiz",
+    "loading": "Ielādē...",
+    "saving": "Saglabā...",
+    "save": "Saglabāt",
+    "showing": "Rāda",
+    "to": "līdz",
+    "of": "no",
+    "previous": "Iepriekšējā",
+    "page": "Lapa",
+    "next": "Nākamā",
+    "closeModal": "Aizvērt",
+    "deleting": "Dzēš...",
+    "cancel": "Atcelt",
+    "results": "{count, plural, one {rezultāts} few {rezultāti} other {rezultātu}}"
+  },
+  "ProfilePage": {
+    "term": {
+      "untitled": "Nenosaukts termins"
+    },
+    "category": {
+      "uncategorized": "Bez kategorijas"
+    },
+    "profile": {
+      "sign_out": "Izlogoties",
+      "your_activity": "Mana aktivitāte",
+      "your_favorites": "Mani favorīti",
+      "recent_comments": "Nesenie komentāri",
+      "favorites_count": "Jūs esat saglabājis {count} {count, plural, one {terminu} other {terminus}} favorītos.",
+      "no_favorites": "Jūs vēl neesat pievienojis nevienu favorītu.",
+      "view_all_favorites": "Skatīt visus favorītus",
+      "no_comments": "Jūs vēl neesat pievienojis nevienu komentāru.",
+      "view_all_comments": "Skatīt visus komentārus",
+      "resolved": "Atrisināts",
+      "open": "Atvērts"
+    }
+  },
+  "comments": {
+    "title": "Komentāri",
+    "page_title": "Komentāri terminam {term}",
+    "back_to_homepage": "Atpakaļ uz sākumlapu",
+    "add_comment": "Pievienot komentāru",
+    "share_thoughts": "Dalieties ar savām domām...",
+    "submit": "Iesniegt komentāru",
+    "submitting": "Iesniedz...",
+    "delete": "Dzēst",
+    "respond": "Atbildēt",
+    "mark_resolved": "Atzīmēt kā atrisinātu",
+    "mark_open": "Atzīmēt kā atvērtu",
+    "info_box": {
+      "title": "Jūs skatāt savus komentārus un administratoru atbildes uz tiem.",
+      "open_status": "Atvērts",
+      "open_description": "komentāri joprojām tiek pārskatīti",
+      "resolved_status": "Atrisināts",
+      "resolved_description": "komentāri ir administratoru apstrādāti"
+    },
+    "status": {
+      "open": "Atvērts",
+      "resolved": "Atrisināts"
+    },
+    "character_count": "{count}/{max} rakstzīmes",
+    "no_comments": "Vēl nav komentāru. Esiet pirmais, kas pievieno komentāru!",
+    "admin_response": "Administratora atbildes",
+    "your_response": "Jūsu atbilde",
+    "cancel": "Atcelt",
+    "term_not_found": "Termins nav atrasts",
+    "term_not_found_description": "Meklētais termins neeksistē vai ir dzēsts.",
+    "confirmation": {
+      "delete": "Vai tiešām vēlaties dzēst šo komentāru?",
+      "delete_description": "Šo darbību nevar atsaukt."
+    },
+    "notifications": {
+      "added": "Komentārs veiksmīgi pievienots",
+      "deleted": "Komentārs veiksmīgi dzēsts",
+      "error": "Radās kļūda. Lūdzu, mēģiniet vēlreiz."
+    }
+  },
+  "admin": {
+    "title": "Administrācijas panelis",
+    "description": "Pārvaldiet zobārstniecības terminoloģiju, lietotāju kontus un vietnes iestatījumus.",
+    "stats": {
+      "total_users": "Kopējais lietotāju skaits",
+      "total_terms": "Kopējais terminu skaits",
+      "total_registered_users": "Kopējais reģistrēto lietotāju skaits",
+      "total_published_terms": "Kopējais publicēto terminu skaits",
+      "categories": "Kategorijas",
+      "total_term_categories": "Kopējais terminu kategoriju skaits",
+      "labels": "Iezīmes", 
+      "total_labels": "Kopējais iezīmju skaits", 
+      "pending_comments": "Gaidāmie komentāri",
+      "pending_terms": "Gaidāmie termini",
+      "pending_approval": "Gaida apstiprinājumu",
+      "terms_awaiting_review": "Termini, kas gaida pārskatīšanu",
+      "users": "Lietotāji",
+      "terms": "Termini"
+    },
+    "action": {
+      "manage_users": "Pārvaldīt lietotājus",
+      "manage_terms": "Pārvaldīt terminus",
+      "manage_categories": "Pārvaldīt kategorijas",
+      "manage_labels": "Pārvaldīt iezīmes",
+      "manage_comments": "Pārvaldīt komentārus",
+      "review_terms": "Pārskatīt terminus",
+      "add_new_term": "Pievienot jaunu terminu",
+      "add_new_category": "Pievienot jaunu kategoriju",
+      "add_new_label": "Pievienot jaunu iezīmi",
+      "import_export": "Importēt/Eksportēt datus",
+      "view_all": "Skatīt visus",
+      "view_respond": "Skatīt un atbildēt",
+      "manage": "Pārvaldīt",
+      "user_management": "Lietotāju pārvaldība",
+      "term_management": "Terminu pārvaldība",
+      "review": "Pārskatīt"
+    },
+    "section": {
+      "recent_comments": "Nesenie komentāri",
+      "recently_joined_users": "Nesen pievienojušies lietotāji",
+      "terms_pending_approval": "Termini, kas gaida apstiprinājumu"
+    },
+    "status": {
+      "open": "Atvērts",
+      "closed": "Slēgts",
+      "disabled": "Atspējots"
+    },
+    "role": {
+      "admin": "Administrators",
+      "user": "Lietotājs"
+    },
+    "on": "par",
+    "term_id": "Termina ID",
+    "latvian_name": "Latviešu nosaukums",
+    "english_name": "Angļu nosaukums",
+    "version": "Versija",
+    "created": "Izveidots",
+    "actions": "Darbības",
+    "no_recent_comments": "Nav nesenu komentāru",
+    "no_recent_users": "Nav nesen pievienotu lietotāju",
+    "no_terms_pending_approval": "Nav terminu, kas gaida apstiprinājumu",
+    "no_translation": "Nav tulkojuma",
+    "response_singular": "atbilde",
+    "response_plural": "atbildes",
+    "joined": "Pievienojies",
+    "term_status": "Termina statuss",
+    "common": {
+      "save": "Saglabāt",
+      "cancel": "Atcelt",
+      "edit": "Rediģēt",
+      "delete": "Dzēst",
+      "create": "Izveidot",
+      "actions": "Darbības",
+      "search": "Meklēt",
+      "filter": "Filtrēt",
+      "status": "Statuss",
+      "confirm": "Apstiprināt",
+      "back": "Atpakaļ",
+      "loading": "Ielādē...",
+      "no_results": "Nav atrasts neviens rezultāts",
+      "yes": "Jā",
+      "no": "Nē",
+      "success": "Veiksmīgi!",
+      "error": "Kļūda!",
+      "confirmation": "Vai esat pārliecināts?",
+      "confirmation_delete": "Vai tiešām vēlaties to izdzēst? Šo darbību nevar atsaukt."
+    },
+    "dashboard": {
+      "title": "Administrācijas panelis",
+      "welcome": "Laipni lūgti administrācijas panelī",
+      "overview": "Pārskats",
+      "recent_activity": "Jaunākās aktivitātes",
+      "backToDashboard": "Atpakaļ uz paneli",
+      "stats": {
+        "users": "Kopējais lietotāju skaits",
+        "terms": "Kopējais terminu skaits",
+        "pending_terms": "Gaidāmie termini",
+        "comments": "Gaidāmie komentāri"
+      },
+      "quick_actions": {
+        "title": "Ātrās darbības",
+        "approve_terms": "Apstiprināt terminus",
+        "manage_users": "Pārvaldīt lietotājus",
+        "moderate_comments": "Moderēt komentārus",
+        "create_term": "Izveidot jaunu terminu"
+      }
+    },
+    "users": {
+      "title": "Lietotāju pārvaldība",
+      "create_user": "Izveidot lietotāju",
+      "edit_user": "Rediģēt lietotāju",
+      "delete_user": "Dzēst lietotāju",
+      "table": {
+        "name": "Vārds",
+        "email": "E-pasts",
+        "role": "Loma",
+        "status": "Statuss",
+        "created_at": "Izveidots",
+        "last_login": "Pēdējā pieteikšanās"
+      },
+      "status": {
+        "active": "Aktīvs",
+        "inactive": "Neaktīvs",
+        "banned": "Bloķēts",
+        "pending": "Gaidāms"
+      },
+      "roles": {
+        "admin": "Administrators",
+        "editor": "Redaktors",
+        "user": "Lietotājs"
+      },
+      "filters": {
+        "all": "Visi lietotāji",
+        "admins": "Administratori",
+        "editors": "Redaktori",
+        "standard": "Standarta lietotāji"
+      },
+      "actions": {
+        "make_admin": "Padarīt par administratoru",
+        "remove_admin": "Noņemt administratora tiesības",
+        "disable": "Atspējot kontu",
+        "enable": "Iespējot kontu"
+      },
+      "messages": {
+        "user_created": "Lietotājs veiksmīgi izveidots",
+        "user_updated": "Lietotājs veiksmīgi atjaunināts",
+        "user_deleted": "Lietotājs veiksmīgi dzēsts",
+        "cannot_delete_self": "Jūs nevarat dzēst savu kontu",
+        "cannot_change_own_role": "Jūs nevarat mainīt savu lomu"
+      }
+    },
+    "comments": {
+      "title": "Komentāru pārvaldība",
+      "table": {
+        "author": "Autors",
+        "content": "Saturs",
+        "term": "Termins",
+        "date": "Datums",
+        "status": "Statuss"
+      },
+      "status": {
+        "approved": "Apstiprināts",
+        "pending": "Gaidāms",
+        "rejected": "Noraidīts",
+        "closed": "Slēgts"
+      },
+      "filters": {
+        "all": "Visi komentāri",
+        "pending": "Gaidāmie",
+        "approved": "Apstiprinātie",
+        "rejected": "Noraidītie"
+      },
+      "actions": {
+        "approve": "Apstiprināt",
+        "reject": "Noraidīt",
+        "close": "Slēgt",
+        "reopen": "Atvērt atkārtoti",
+        "delete": "Dzēst"
+      },
+      "messages": {
+        "comment_approved": "Komentārs apstiprināts",
+        "comment_rejected": "Komentārs noraidīts",
+        "comment_deleted": "Komentārs dzēsts",
+        "comment_closed": "Komentārs slēgts",
+        "comment_reopened": "Komentārs atkārtoti atvērts"
+      },
+      "empty": "Nav komentāru, ko moderēt",
+      "backToDashboard": "Atpakaļ uz paneli",
+      "description": "Skatīt, atbildēt un pārvaldīt visus lietotāju komentārus zobārstniecības terminoloģijas platformā.",
+      "stats": {
+        "total": "Kopējais komentāru skaits",
+        "open": "Atvērtie komentāri",
+        "resolved": "Atrisinātie komentāri"
+      },
+      "unknownTerm": "Nezināms termins",
+      "unnamedTerm": "Nenosaukts termins",
+      "filters": {
+        "title": "Filtrēt komentārus",
+        "all": "Visi komentāri",
+        "open": "Atvērtie",
+        "resolved": "Atrisinātie"
+      },
+      "status": {
+        "open": "Atvērts",
+        "resolved": "Atrisināts"
+      },
+      "viewTermLink": "Skatīt terminu",
+      "adminResponsesTitle": "Administratora atbildes",
+      "adminFallbackName": "Administrators",
+      "adminRoleBadge": "Admin",
+      "emptyState": {
+        "title": "Komentāri nav atrasti",
+        "all": "Sistēmā vēl nav komentāru.",
+        "open": "Pašlaik nav atvērtu komentāru.",
+        "resolved": "Vēl nav atrisinātu komentāru.",
+        "viewAllButton": "Skatīt visus komentārus"
+      },
+      "toggleButton": {
+        "errorAlert": "Neizdevās atjaunināt komentāra statusu",
+        "titleReopen": "Atvērt komentāru atkārtoti",
+        "titleResolve": "Atzīmēt kā atrisinātu",
+        "updating": "Atjaunina...",
+        "reopen": "Atvērt atkārtoti",
+        "resolve": "Atrisināt"
+      }
+    },
+    "pending_terms": {
+      "title": "Gaidāmo terminu pārskatīšana",
+      "description": "Pārskatiet un apstipriniet vai noraidiet terminu melnrakstus, pirms tie tiek publicēti publiskajā vietnē.",
+      "noTermsTitle": "Nav gaidāmo terminu",
+      "noTermsDescription": "Pašlaik nav terminu, kas gaida apstiprinājumu.",
+      "table": {
+        "name": "Termina nosaukums",
+        "category": "Kategorija",
+        "submitter": "Iesniedzējs",
+        "date": "Iesniegšanas datums"
+      },
+      "review": {
+        "title": "Pārskatīt terminu",
+        "approve": "Apstiprināt",
+        "reject": "Noraidīt",
+        "request_changes": "Pieprasīt izmaiņas",
+        "feedback": "Atsauksmes"
+      },
+      "status": {
+        "pending": "Gaida pārskatīšanu",
+        "approved": "Apstiprināts",
+        "rejected": "Noraidīts",
+        "changes_requested": "Pieprasītas izmaiņas",
+        "will_be_published": "Tiks publicēts pēc apstiprināšanas"
+      },
+      "messages": {
+        "term_approved": "Termins ir apstiprināts un publicēts",
+        "term_rejected": "Termins ir noraidīts",
+        "changes_requested": "Ir pieprasītas izmaiņas",
+        "feedback_sent": "Atsauksmes nosūtītas iesniedzējam",
+        "confirmation_delete": "Vai tiešām vēlaties noraidīt šo terminu? Šo darbību nevar atsaukt."
+      },
+      "empty": "Nav gaidāmo terminu, ko pārskatīt",
+      "comments": {
+        "title": "Administrātora komentāri",
+        "loading": "Ielādē komentārus...",
+        "noComments": "Nav komentāru šim melnrakstam.",
+        "placeholder": "Pievienojiet administrātora komentāru šim melnrakstam...",
+        "submittingButton": "Veic izmaiņas",
+        "submitButton": "Pievienot komentāru"
+      }
+    },
+    "new_term": {
+      "title": "Pievienot jaunu terminu",
+      "form": {
+        "term_name": "Termina nosaukums",
+        "category": "Kategorija",
+        "definition": "Definīcija",
+        "lv_translation": "Latviešu valodas tulkojums",
+        "en_translation": "Angļu valodas tulkojums",
+        "lv_definition": "Latviešu valodas definīcija",
+        "en_definition": "Angļu valodas definīcija",
+        "select_category": "Izvēlēties kategoriju",
+        "create_category": "Izveidot jaunu kategoriju"
+      },
+      "validation": {
+        "name_required": "Termina nosaukums ir obligāts",
+        "category_required": "Kategorija ir obligāta",
+        "definition_required": "Nepieciešama vismaz vienas valodas definīcija"
+      },
+      "actions": {
+        "create": "Izveidot terminu",
+        "save_draft": "Saglabāt kā melnrakstu",
+        "preview": "Priekšskatījums"
+      },
+      "messages": {
+        "term_created": "Jauns termins veiksmīgi izveidots",
+        "draft_saved": "Melnraksts veiksmīgi saglabāts",
+        "creation_error": "Kļūda termina izveidošanā"
+      }
+    },
+    "settings": {
+      "title": "Administrācijas iestatījumi",
+      "sections": {
+        "general": "Vispārīgie iestatījumi",
+        "appearance": "Izskats",
+        "security": "Drošība",
+        "notifications": "Paziņojumi"
+      },
+      "general": {
+        "site_name": "Vietnes nosaukums",
+        "site_description": "Vietnes apraksts",
+        "default_language": "Noklusējuma valoda",
+        "contact_email": "Kontakta e-pasts"
+      },
+      "appearance": {
+        "theme": "Motīvs",
+        "light": "Gaišs",
+        "dark": "Tumšs",
+        "system": "Sistēmas noklusējums"
+      },
+      "security": {
+        "login_attempts": "Maksimālie pieteikšanās mēģinājumi",
+        "session_timeout": "Sesijas noilgums (minūtēs)",
+        "password_policy": "Paroles politika",
+        "two_factor": "Divu faktoru autentifikācija"
+      },
+      "notifications": {
+        "new_user": "Jauna lietotāja reģistrācija",
+        "new_comment": "Jauns komentārs",
+        "new_term": "Jauna termina iesniegšana"
+      },
+      "messages": {
+        "settings_saved": "Iestatījumi veiksmīgi saglabāti",
+        "reset_defaults": "Iestatījumi atiestatīti uz noklusējuma vērtībām"
+      }
+    }
+  },
+  "AdminManageCategories": {
+    "title": "Kategoriju pārvaldība",
+    "description": "Izveidojiet, rediģējiet un pārvaldiet kategorijas zobārstniecības terminoloģijas organizēšanai.",
+    "categoriesList": "Kategoriju saraksts",
+    "searchPlaceholder": "Meklēt kategorijas...",
+    "addCategory": "Pievienot kategoriju",
+    "refresh": "Atsvaidzināt datus",
+    "edit": "Rediģēt",
+    "delete": "Dzēst",
+    "save": "Saglabāt izmaiņas",
+    "saving": "Saglabā...",
+    "cancel": "Atcelt",
+    "deleting": "Dzēš...",
+    "previous": "Iepriekšējā",
+    "next": "Nākamā",
+    "loading": "Ielādē kategorijas...",
+    "tryAgain": "Mēģināt vēlreiz",
+    "noCategories": "Kategorijas nav atrastas",
+    "noCategoriesDescription": "Sistēmā vēl nav nevienas kategorijas. Izveidojiet jaunu kategoriju, lai sāktu.",
+    "noCategoriesMatching": "Nav kategoriju, kas atbilst '{query}'",
+    "clearSearch": "Notīrīt meklēšanu",
+    "unnamedCategory": "Nenosaukta kategorija",
+    "fetchError": "Neizdevās ielādēt kategorijas. Lūdzu, mēģiniet vēlreiz.",
+    "editSuccess": "Kategorija veiksmīgi atjaunināta!",
+    "editError": "Neizdevās atjaunināt kategoriju",
+    "deleteSuccess": "Kategorija veiksmīgi dzēsta!",
+    "deleteError": "Neizdevās dzēst kategoriju",
+    "unexpectedError": "Radās neparedzēta kļūda",
+    "editCategoryTitle": "Rediģēt kategoriju",
+    "deleteConfirmationTitle": "Dzēst kategoriju",
+    "deleteConfirmationText": "Vai tiešām vēlaties dzēst šo kategoriju?",
+    "deleteWarning": "Šo darbību nevar atsaukt. Vispirms jāpārcieš vai jādzēš termini šajā kategorijā.",
+    "tableHeaders": {
+      "id": "ID",
+      "name": "Nosaukums",
+      "translations": "Valodas",
+      "created": "Izveidots",
+      "actions": "Darbības"
+    },
+      "validation": {
+        "lvNameRequired": "Nepieciešams nosaukums latviešu valodā",
+        "enNameRequired": "Nepieciešams nosaukums angļu valodā"
+      },
+      "showing": "Rāda",
+      "to": "līdz",
+      "of": "no",
+      "categories": "kategorijām",
+      "closeNotification": "Aizvērt paziņojumu",
+      "closeModal": "Aizvērt",
+      "areYouSure": "Vai esat pārliecināts?",
+      "errorTitle": "Kļūda"
+    },
+    "AdminNewTerm": {
+    "header": {
+      "home": "Sākums",
+      "adminPanel": "Administrācijas panelis",
+      "addNewTerm": "Pievienot jaunu terminu"
+    },
+    "backToDashboard": "Atpakaļ uz paneli",
+    "pageTitle": "Izveidot jaunu termina melnrakstu",
+    "pageDescription": "Pievienojiet jaunu zobārstniecības terminoloģijas ierakstu latviešu un angļu valodā. Jaunie termini tiks izveidoti kā melnraksti, un tiem būs nepieciešams apstiprinājums, pirms tie parādīsies publiskajā vietnē.",
+    "loadingForm": "Ielādē formu...",
+    "unnamedCategory": "Nenosaukta kategorija",
+    "unnamedLabel": "Nenosaukta iezīme",
+    "form": {
+      "termInfoTitle": "Termina informācija",
+      "requiredFieldsNote": "Visi lauki, kas atzīmēti ar *, ir obligāti",
+      "latvianLabel": "Latviešu (LV)",
+      "lvNameLabel": "Termina nosaukums latviski",
+      "lvNamePlaceholder": "Ievadiet termina nosaukumu latviski",
+      "lvDescriptionLabel": "Apraksts latviski",
+      "lvDescriptionPlaceholder": "Ievadiet aprakstu latviski",
+      "englishLabel": "Angļu (EN)",
+      "enNameLabel": "Termina nosaukums angliski",
+      "enNamePlaceholder": "Ievadiet termina nosaukumu angliski",
+      "enDescriptionLabel": "Apraksts angliski",
+      "enDescriptionPlaceholder": "Ievadiet aprakstu angliski",
+      "categoryLabel": "Kategorija",
+      "selectCategoryPlaceholder": "Izvēlieties kategoriju",
+      "noCategoriesOption": "Nav pieejamu kategoriju",
+      "noCategoriesWarning": "Nav pieejamu kategoriju. Lūdzu, vispirms izveidojiet kategorijas.",
+      "categoryHelpText": "Kategorija palīdz lietotājiem vieglāk atrast terminus.",
+      "labelsLabel": "Iezīmes (Neobligāti)",
+      "labelsHelpText": "Izvēlieties atbilstošās iezīmes, lai palīdzētu meklēšanā un grupēšanā.",
+      "noLabelsAvailable": "Nav pieejamu iezīmju.",
+      "draftNotice": "Šis termins tiks izveidots kā MELNRAKSTS, un tam būs nepieciešams apstiprinājums, pirms tas parādīsies publiskajā vietnē.",
+      "cancelButton": "Atcelt",
+      "submitButton": "Izveidot termina melnrakstu",
+      "submittingButton": "Veido melnrakstu..."
+    },
+    "notifications": {
+      "noCategories": "Nav pieejamu kategoriju. Lūdzu, vispirms izveidojiet kategorijas.",
+      "loadCategoriesError": "Neizdevās ielādēt kategorijas",
+      "loadFormDataError": "Neizdevās ielādēt formas datus",
+      "fillRequiredFields": "Lūdzu, aizpildiet visus obligātos laukus",
+      "createSuccess": "Termina melnraksts veiksmīgi izveidots!",
+      "redirecting": "Novirza uz gaidāmo terminu lapu...",
+      "createError": "Neizdevās izveidot termina melnrakstu",
+      "unexpectedError": "Radās neparedzēta kļūda",
+      "errorPrefix": "Kļūda",
+      "fillRequiredLvEn": "Lūdzu, norādiet kategoriju nosaukumus gan latviešu, gan angļu valodā.",
+      "languageLoadError": "Nevarēja ielādēt nepieciešamās valodu konfigurācijas. Lūdzu, sazinieties ar atbalsta dienestu."
+    },
+    "validation": {
+      "lvNameRequired": "Latviešu nosaukums ir obligāts",
+      "enNameRequired": "Angļu nosaukums ir obligāts",
+      "categoryRequired": "Kategorija ir obligāta"
+    },
+    "footer": {
+      "copyright": "© 2025 Zobārstniecības terminoloģija. Visas tiesības aizsargātas."
+    }
+  },
+  "AdminUsersPage": {
+    "header": {
+      "home": "Sākums",
+      "adminPanel": "Administrācijas panelis",
+      "userManagement": "Lietotāju pārvaldība"
+    },
+    "backToDashboard": "Atpakaļ uz paneli",
+    "pageTitle": "Lietotāju pārvaldība",
+    "pageDescription": "Pārvaldiet lietotāju kontus, lomas un piekļuvi platformā.",
+    "stats": {
+      "totalUsers": "Kopējais lietotāju skaits",
+      "administrators": "Administratori",
+      "disabledAccounts": "Atspējotie konti"
+    },
+    "footer": {
+      "copyright": "© 2025 Zobārstniecības terminoloģija. Visas tiesības aizsargātas."
+    }
+  },
+  "AdminUsersSearchFilter": {
+    "searchPlaceholder": "Meklēt pēc vārda vai e-pasta...",
+    "roles": {
+      "all": "Visas lomas",
+      "admin": "Administratori",
+      "user": "Parastie lietotāji"
+    },
+    "searchButton": "Meklēt",
+    "searchingButton": "Meklē..."
+  },
+  "AdminUsersTable": {
+    "updatingResults": "Atjaunina rezultātus...",
+    "tableHeaders": {
+      "user": "Lietotājs",
+      "email": "E-pasts",
+      "role": "Loma",
+      "status": "Statuss",
+      "actions": "Darbības"
+    },
+    "userIdPrefix": "ID",
+    "roles": {
+      "admin": "Administrators",
+      "user": "Parastais lietotājs"
+    },
+    "status": {
+      "active": "Aktīvs",
+      "disabled": "Atspējots"
+    },
+    "pagination": {
+      "previous": "Iepriekšējā",
+      "next": "Nākamā",
+      "showingInfo": "Rāda {page}. no {pages} lpp. ({total} rezultāti)",
+      "first": "Pirmā",
+      "last": "Pēdējā"
+    },
+    "alerts": {
+      "cannotRemoveOwnAdmin": "Jūs nevarat noņemt savas administratora privilēģijas",
+      "roleUpdateFailed": "Neizdevās atjaunināt lietotāja lomu",
+      "cannotDisableOwnAccount": "Jūs nevarat atspējot savu kontu",
+      "statusUpdateFailed": "Neizdevās atjaunināt lietotāja statusu",
+      "cannotDeleteOwnAccount": "Jūs nevarat dzēst savu kontu",
+      "deleteFailed": "Neizdevās dzēst lietotāju"
+    }
+  },
+  "AdminDeleteUserModal": {
+    "title": "Dzēst lietotāja kontu",
+    "confirmationText": "Vai esat pārliecināts, ka vēlaties dzēst lietotāja {userName} kontu? Šo darbību nevar atsaukt, un visi ar šo kontu saistītie dati tiks neatgriezeniski noņemti.",
+    "userInfoTitle": "Lietotāja informācija",
+    "labels": {
+      "fullName": "Pilnais vārds",
+      "email": "E-pasts",
+      "role": "Loma",
+      "status": "Statuss"
+    },
+    "roles": {
+      "admin": "Administrators",
+      "user": "Parastais lietotājs"
+    },
+    "status": {
+      "active": "Aktīvs",
+      "disabled": "Atspējots"
+    },
+    "warningTitle": "Brīdinājums",
+    "warningText": "Tas dzēsīs visus lietotāja datus, ieskaitot komentārus un favorītus.",
+    "buttons": {
+      "delete": "Dzēst lietotāju",
+      "deleting": "Dzēš...",
+      "cancel": "Atcelt"
+    }
+  },
+  "AdminManageTerms": {
+    "description": "Pārvaldiet visus terminoloģijas ierakstus datu bāzē.",
+    "title": "Pārvaldīt terminus",
+    "contentPlaceholder": "Šeit tiks attēlota terminu pārvaldības saskarne.",
+    "published": "Publicēts",
+    "draft": "Melnraksts",
+    "archived": "Arhivēts",
+    "categoryFilterPlaceholder": "Filtrēt pēc kategorijas...",
+    "searchPlaceholder": "Meklēt terminus...",
+    "loading": "Ielādē terminus...",
+    "fetchError": "Neizdevās ielādēt terminus. Lūdzu, mēģiniet vēlreiz.",
+    "noResults": "Netika atrasti termini, kas atbilstu jūsu kritērijiem.",
+    "showingResults": "Rāda {count} {count, plural, one {rezultātu} other {rezultātus}}",
+    "unnamedTerm": "Nenosaukts termins",
+    "uncategorized": "Bez kategorijas",
+    "categoryFilterLabel": "Filtrēt pēc kategorijas",
+    "allCategories": "Visas kategorijas",
+    "unnamedCategory": "Nenosaukta kategorija",
+    "fetchCategoriesError": "Neizdevās ielādēt kategorijas.",
+    "createVersion": "Izveidot jaunu versiju",
+    "tableHeaderName": "Nosaukums",
+    "tableHeaderCategory": "Kategorija",
+    "tableHeaderStatus": "Statuss",
+    "tableHeaderVersion": "Versija",
+    "tableHeaderCreated": "Izveidots",
+    "tableHeaderActions": "Darbības",
+    "createVersionError": "Kļūda, veidojot jaunu versiju: {error}",
+    "createVersionSuccess": "Jauna melnraksta versija veiksmīgi izveidota!",
+    "createVersionUnexpectedError": "Radās neparedzēta kļūda, veidojot jauno versiju.",
+    "deleteError": "Kļūda dzēšot versiju: {error}",
+    "deleteSuccess": "Termina versija veiksmīgi dzēsta!",
+    "deleteUnexpectedError": "Radās neparedzēta kļūda, dzēšot termina versiju.",
+    "noTranslation": "Nav tulkojuma",
+    "manageVersions": "Pārvaldīt versijas",
+    "clearFilters": "Notīrīt filtrus",
+    "manage_terms": "Pārvaldīt terminus",
+    "add_new_term": "Pievienot jaunu terminu",
+    "refresh": "Atsvaidzināt",
+    "published_terms": "Publicētie termini",
+    "draft_terms": "Melnraksti",
+    "archived_terms": "Arhivētie termini",
+    "results": "rezultāti",
+    "noResultsMatching": "Netika atrasti termini, kas atbilstu jūsu meklēšanas kritērijiem.",
+    "noResultsDescription": "Pašlaik šajā statusā nav terminu.",
+    "deleteConfirmationTitle": "Dzēst termina versiju",
+    "deleteConfirmationText": "Vai tiešām vēlaties dzēst termina \"{name}\" versiju?",
+    "deleteWarning": "Šo darbību nevar atsaukt.",
+    "areYouSure": "Vai esat pārliecināts?",
+    "delete": "Dzēst",
+    "edit": "Rediģēt",
+    "manageLabels": "Pārvaldīt iezīmes",
+    "labelUpdateSuccess": "Iezīmes veiksmīgi atjauninātas.",
+    "searchOrSelectLabel": "Meklēt vai izvēlēties iezīmi...",
+    "nothingFound": "Nekas nav atrasts.",
+    "alreadyAdded": "(jau pievienots)",
+    "addLabel": "Pievienot",
+    "labelAlreadyAddedError": "Iezīme jau ir pievienota šim terminam.",
+    "managingLabelsFor": "Pārvalda iezīmes terminam:"
+  },
+  "AdminEditTerm": {
+    "pageTitle": "Rediģēt termina melnrakstu v{version}",
+    "fetchError": "Kļūda, ielādējot termina datus: {error}",
+    "notDraftError": "Var rediģēt tikai MELNRAKSTA versijas.",
+    "latvianFields": "Latviešu lauki",
+    "englishFields": "Angļu lauki",
+    "termNameLabel": "Termina nosaukums",
+    "termDescriptionLabel": "Apraksts",
+    "updateSuccessMessage": "Melnraksts veiksmīgi atjaunināts!",
+    "cancelButton": "Atcelt",
+    "saveButton": "Saglabāt izmaiņas",
+    "savingButton": "Saglabā...",
+    "metaTitle": "Rediģēt termina melnrakstu",
+    "backToDrafts": "Atpakaļ uz melnrakstiem",
+    "editingTermTitle": "Rediģēt melnrakstu",
+    "termNamePlaceholder": "Ievadiet termina nosaukumu",
+    "termDescriptionPlaceholder": "Ievadiet aprakstu",
+    "errorTitle": "Kļūda",
+    "notEditableTitle": "Termins nav rediģējams",
+    "termNotFound": "Termins nav atrasts",
+    "createPageTitle": "Izveidot jaunu melnrakstu no v{version}",
+    "creatingNewDraftTitle": "Izveido jaunu melnrakstu",
+    "createSuccessMessage": "Jauns melnraksts veiksmīgi izveidots!"
+  },
+  "AdminManageVersions": {
+    "pageTitle": "Pārvaldīt versijas",
+    "fetchError": "Kļūda, ielādējot terminu versijas: {error}",
+    "noVersionsFound": "Šim terminam versijas nav atrastas.",
+    "backToManageTerms": "Atpakaļ uz terminu pārvaldību",
+    "version": "Versija",
+    "status": "Statuss",
+    "createdDate": "Izveidots",
+    "publishedDate": "Publicēts",
+    "archivedDate": "Arhivēts",
+    "actions": "Darbības",
+    "restoreButton": "Atjaunot",
+    "restoringButton": "Atjauno...",
+    "restoreConfirmation": "Vai esat pārliecināts, ka vēlaties atjaunot šo versiju? Pašreizējā publicētā versija tiks arhivēta.",
+    "restoreError": "Kļūda, atjaunojot versiju:",
+    "restoreSuccess": "Versija veiksmīgi atjaunota!",
+    "published": "Publicēts",
+    "draft": "Melnraksts",
+    "archived": "Arhivēts",
+    "metaTitle": "Pārvaldīt versijas terminam {termName}",
+    "detailsModalTitle": "Versijas v{version} detaļas",
+    "closeModalAriaLabel": "Aizvērt",
+    "latvianFields": "Latviešu detaļas",
+    "englishFields": "Angļu detaļas",
+    "termNameLabel": "Nosaukums",
+    "termDescriptionLabel": "Apraksts",
+    "noTranslation": "Nav tulkojuma",
+    "noDescription": "Nav apraksta",
+    "closeButton": "Aizvērt",
+    "viewDetailsButton": "Skatīt detaļas"
+  },
+  "AdminNewCategory": {
+    "header": {
+      "home": "Sākums",
+      "adminPanel": "Administrācijas panelis",
+      "addNewCategory": "Pievienot jaunu kategoriju"
+    },
+    "backToDashboard": "Atpakaļ uz vadības paneli",
+    "pageTitle": "Izveidot jaunu kategoriju",
+    "pageDescription": "Pievienojiet jaunu kategoriju zobārstniecības terminoloģijas organizēšanai. Kategorijas palīdz lietotājiem vieglāk atrast terminus un uzlabo vietnes navigāciju.",
+    "loadingForm": "Ielādē formu...",
+    "form": {
+      "categoryInfoTitle": "Kategorijas informācija",
+      "requiredFieldsNote": "Lauki, kas atzīmēti ar *, ir obligāti.",
+      "nameLabel": "{language} nosaukums", 
+      "namePlaceholder": "Ievadiet kategorijas nosaukumu",
+      "lvNameLabel": "Nosaukums Latviešu valodā",
+      "lvNamePlaceholder": "Ievadiet Kategorijas nosaukumu Latviešu valodā",
+      "enNameLabel": "Nosaukums Angļu valodā",
+      "enNamePlaceholder": "Ievadiet nosaukumu Angļu valodā",
+      "defaultLanguage": "Noklusējuma",
+      "categoryNote": "Kategorijas būs nekavējoties pieejamas terminu piešķiršanai pēc izveidošanas.",
+      "cancelButton": "Atcelt",
+      "submitButton": "Izveidot kategoriju",
+      "submittingButton": "Izveido kategoriju..."
+    },
+    "notifications": {
+      "noLanguages": "Nav pieejamas valodas.",
+      "loadLanguagesError": "Neizdevās ielādēt valodas",
+      "loadFormDataError": "Neizdevās ielādēt formas datus",
+      "fillRequiredFields": "Lūdzu, aizpildiet obligātos laukus",
+      "createSuccess": "Kategorija veiksmīgi izveidota!",
+      "redirecting": "Novirzīšana uz kategoriju sarakstu...",
+      "createError": "Neizdevās izveidot kategoriju",
+      "unexpectedError": "Radās neparedzēta kļūda",
+      "errorPrefix": "Kļūda"
+    },
+    "validation": {
+      "nameRequired": "Kategorijas nosaukums ir obligāts vismaz vienā valodā",
+      "nameRequiredSpecific": "Kategorijas nosaukums {language} valodā ir obligāts."
+    },
+    "footer": {
+      "copyright": "© 2025 Zobārstniecības terminoloģija. Visas tiesības aizsargātas."
+    }
+  },
+  "AdminNewLabel": {
+    "pageTitle": "Pievienot jaunu iezīmi",
+    "pageDescription": "Izveidojiet jaunas iezīmes, lai efektīvāk kategorizētu un organizētu terminus. Iezīmes būs pieejamas visās konfigurētajās valodās.",
+    "labelName": "Iezīmes nosaukums",
+    "header": {
+      "home": "Sākums",
+      "adminPanel": "Administrācijas panelis",
+      "addNewLabel": "Pievienot jaunu iezīmi"
+    },
+    "form": {
+      "labelInfoTitle": "Iezīmes informācija",
+      "requiredFieldsNote": "Iezīmes nosaukums ir obligāts vismaz vienā valodā.",
+      "cancelButton": "Atcelt",
+      "languageInputLabel": "Iezīmes nosaukums {languageName} ({languageCode})",
+      "inputPlaceholder": "Ievadiet iezīmes nosaukumu {languageName}"
+    },
+    "notifications": {
+      "createSuccess": "Iezīme veiksmīgi izveidota!",
+      "createError": "Neizdevās izveidot iezīmi.",
+      "validationError": "Validācija neizdevās. Lūdzu, pārbaudiet laukus.",
+      "generalError": "Radās neparedzēta kļūda."
+    }
+  },
+  "AdminManageLabels": {
+    "title": "Pārvaldīt iezīmes",
+    "description": "Skatīt, rediģēt un dzēst iezīmes, kas tiek izmantotas terminu organizēšanai. Nodrošiniet, ka iezīmes ir skaidras un konsekventi lietotas visās valodās.",
+    "addNewLabelButton": "Pievienot jaunu iezīmi",
+    "tableHeaders": {
+      "id": "ID",
+      "name": "Nosaukums",
+      "translations": "Tulkojumi",
+      "termsUsing": "Termini, kas izmanto",
+      "created": "Izveidots",
+      "actions": "Darbības"
+    },
+    "editModalTitle": "Rediģēt iezīmi",
+    "deleteModalTitle": "Dzēst iezīmi",
+    "deleteConfirmationText": "Vai tiešām vēlaties dzēst iezīmi \"{labelName}\"? Šo darbību nevar atsaukt.",
+    "deleteWarningInUse": "Šo iezīmi pašlaik izmanto {count} termins(-i) un to nevar dzēst. Lūdzu, vispirms noņemiet to no visiem terminiem.",
+    "noLabelsFound": "Iezīmes nav atrodamas.",
+    "searchPlaceholder": "Meklēt iezīmes...",
+    "loadingLabels": "Ielādē iezīmes...",
+    "notifications": {
+      "loadError": "Neizdevās ielādēt iezīmes.",
+      "updateSuccess": "Iezīme veiksmīgi atjaunināta!",
+      "updateError": "Neizdevās atjaunināt iezīmi.",
+      "deleteSuccess": "Iezīme veiksmīgi dzēsta!",
+      "deleteError": "Neizdevās dzēst iezīmi.",
+      "labelName" : "Iezīmes nosaukums"
+    }
+  }
+}

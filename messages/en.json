@@ -1,0 +1,974 @@
+{
+  "app": {
+    "name": "Dentabular"
+  },
+  "navigation": {
+    "home": "Home",
+    "profile": "Profile",
+    "admin_panel": "Admin Panel",
+    "categories": "Categories",
+    "favorites": "Favorites",
+    "recently_added": "Recently Added",
+    "sign_in": "Sign In",
+    "back_to_admin": "Back to Admin Panel"
+    
+  },
+  "categories": {
+    "title": "Categories",
+    "description": "Browse dental terminology by category to find exactly what you're looking for.",
+    "browse_terms": "Browse terms",
+    "search_placeholder": "Search categories...",
+    "no_results": "No categories found matching '{searchTerm}'"
+  },
+  "CategoriesPage": {
+    "title": "Explore Categories",
+    "description": "Browse dental terminology by category to find exactly what you're looking for.",
+    "browseTerms": "Browse terms",
+    "unnamedCategory": "Unnamed Category"
+  },
+  "CategoryPage": {
+    "description": "Browse dental terminology in the {category} category.",
+    "showingTerms": "Showing {count} {count, plural, one {term} other {terms}} in {category}",
+    "noTermsTitle": "No Terms Found",
+    "noTermsDescription": "There are currently no terms available in the {category} category.",
+    "backToCategories": "Back to Categories",
+    "loadMore": "Load More Terms",
+    "uncategorized": "Uncategorized",
+    "showingResults": "Showing {count} {count, plural, one {result} other {results}} for '{query}' in {category}"
+  },
+  "search": {
+    "search_placeholder": "Search...",
+    "search_placeholder_category": "Search terms in {category}...",
+    "searching": "Searching...",
+    "no_results": "No results found",
+    "no_results_description": "We couldn't find any terms matching your search. Please try different keywords or browse our categories.",
+    "no_results_description_category": "Your search for '{query}' in {category} did not match any terms. Try different keywords.",
+    "search_results": "Search Results",
+    "featured_terms": "Featured Terms",
+    "loading_terms": "Loading terms...",
+    "clear_search": "Clear search"
+  },
+  "hero": {
+    "title": "Dental Terminology Database",
+    "subtitle": "Your comprehensive dental terminology resource in Latvian and English languages, making any research easier."
+  },
+  "actions": {
+    "browse_categories": "Browse Categories",
+    "sign_in": "Sign In",
+    "view_all": "View All →",
+    "show_more": "Show More",
+    "loading": "Loading...",
+    "view_details": "View Details",
+    "export_to_pdf": "Export to PDF",
+    "exporting": "Exporting...",
+    "font_loading": "Font is still loading. Please try again in a moment.",
+    "loading_font": "Loading font...",
+    "failed_to_generate": "Failed to generate PDF. Please try again."
+  },
+  "term_view": {
+    "no_translation": "Translation not available",
+    "no_description": "Description not available",
+    "uncategorized": "Uncategorized",
+    "add_to_favorites": "Add to Favorites",
+    "remove_from_favorites": "Remove from Favorites",
+    "sign_in_to_add": "Sign in to add to favorites",
+    "favorited": "Favorited",
+    "new": "New"
+  },
+  "language": {
+    "lv": "LV",
+    "en": "EN",
+    "both": "LV | EN"
+  },
+  "content_display_language": "Toggle content display language",
+  "stats": {
+    "terms_count": "500+",
+    "terms_label": "Dental Terms",
+    "languages_count": "2",
+    "languages_label": "Languages",
+    "price": "Free",
+    "price_label": "Resource",
+    "updates": "Daily",
+    "updates_label": "Updates"
+  },
+  "term_display": {
+    "show_language": "Show language",
+    "labels": "Labels"
+  },
+  "profile": {
+    "welcome": "Welcome to your profile",
+    "sign_in_description": "Sign in to access your favorites, track your activity, and contribute to our dental terminology database.",
+    "sign_in_google": "Sign in with Google",
+    "sign_out": "Sign Out",
+    "your_activity": "My Activity",
+    "your_favorites": "My Favorites",
+    "recent_comments": "Recent Comments",
+    "favorites_count": "You have saved {count} {count, plural, one {term} other {terms}} to favorites.",
+    "no_favorites": "You haven't added any favorites yet.",
+    "view_all_favorites": "View All Favorites",
+    "no_comments": "You haven't added any comments yet.",
+    "view_all_comments": "View All Comments",
+    "resolved": "Resolved",
+    "open": "Open",
+    "favorites": "Favorites",
+    "comments": "Comments",
+    "user": "User",
+    "favorite_dental_terms": "My Favorite Dental Terms",
+    "exported_on": "Exported on",
+    "page": "Page",
+    "of": "of",
+    "exported_from": "Exported from Dentabular - Dental Terminology Database",
+    "favorites_description": "You have saved {count} {count, plural, one {term} other {terms}} to favorites."
+  },
+  "footer": {
+    "description": "A comprehensive bilingual resource for dental professionals and students.",
+    "quick_links": "Quick Links",
+    "account": "Account",
+    "my_profile": "My Profile",
+    "my_favorites": "My Favorites",
+    "dental_terminology": "Dental Terminology",
+    "copyright": "© 2025 Dental Terminology. All rights reserved.",
+    "admin": "Administration"
+  },
+  "recently_added": {
+    "description": "Keep up with the latest additions to our dental terminology database.",
+    "last_updated": "Last Updated",
+    "showing_terms": "Showing {count} recently added terms",
+    "no_terms_title": "No Recent Terms",
+    "no_terms_description": "There are no recently added terms at the moment. Check back later for updates to our dental terminology database."
+  },
+  "term": {
+    "untitled": "Untitled Term"
+  },
+  "category": {
+    "uncategorized": "Uncategorized",
+    "category": "Category"
+  },
+  "labels": {
+    "labels": "Labels",
+    "no_labels": "No labels"
+  },
+  "common": {
+    "anonymous": "Anonymous",
+    "copyright": "© 2025 Dental Terminology. All rights reserved.",
+    "closeNotification": "Close notification",
+    "clearSearch": "Clear search",
+    "errorTitle": "Error",
+    "edit" : "Edit",
+    "delete": "Delete",
+    "error": {
+      "noLanguagesConfigured": "No languages are configured in the system. Please contact an administrator."
+    },
+    "tryAgain": "Try Again",
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "save": "Save",
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "previous": "Previous",
+    "page": "Page",
+    "next": "Next",
+    "closeModal": "Close",
+    "deleting": "Deleting...",
+    "cancel": "Cancel",
+    "results": "{count, plural, one {result} other {results}}"
+  },
+  "ProfilePage": {
+    "term": {
+      "untitled": "Untitled Term"
+    },
+    "category": {
+      "uncategorized": "Uncategorized"
+    },
+    "profile": {
+      "sign_out": "Sign Out",
+      "your_activity": "My Activity",
+      "your_favorites": "My Favorites",
+      "recent_comments": "Recent Comments",
+      "favorites_count": "You have saved {count} {count, plural, one {term} other {terms}} to favorites.",
+      "no_favorites": "You haven't added any favorites yet.",
+      "view_all_favorites": "View All Favorites",
+      "no_comments": "You haven't added any comments yet.",
+      "view_all_comments": "View All Comments",
+      "resolved": "Resolved",
+      "open": "Open"
+    }
+  },
+  "comments": {
+    "title": "Comments",
+    "page_title": "Comments for {term}",
+    "back_to_homepage": "Back to Homepage",
+    "add_comment": "Add Your Comment",
+    "share_thoughts": "Share your thoughts...",
+    "submit": "Submit Comment",
+    "submitting": "Submitting...",
+    "delete": "Delete",
+    "respond": "Respond",
+    "mark_resolved": "Mark as Resolved",
+    "mark_open": "Mark as Open",
+    "info_box": {
+      "title": "You are viewing your own comments and any admin responses to them.",
+      "open_status": "Open",
+      "open_description": "comments are still being reviewed",
+      "resolved_status": "Resolved",
+      "resolved_description": "comments have been addressed by administrators"
+    },
+    "status": {
+      "open": "Open",
+      "resolved": "Resolved"
+    },
+    "character_count": "{count}/{max} characters",
+    "no_comments": "No comments yet. Be the first to add a comment!",
+    "admin_response": "Admin Responses",
+    "your_response": "Your Response",
+    "cancel": "Cancel",
+    "term_not_found": "Term Not Found",
+    "term_not_found_description": "The term you are looking for doesn't exist or has been removed.",
+    "confirmation": {
+      "delete": "Are you sure you want to delete this comment?",
+      "delete_description": "This action cannot be undone."
+    },
+    "notifications": {
+      "added": "Comment added successfully",
+      "deleted": "Comment deleted successfully",
+      "error": "An error occurred. Please try again."
+    }
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "description": "Manage dental terminology, user accounts, and site settings.",
+    "stats": {
+      "total_users": "Total Users",
+      "total_terms": "Total Terms",
+      "total_registered_users": "Total Registered Users",
+      "total_published_terms": "Total Published Terms",
+      "categories": "Categories",
+      "total_term_categories": "Total Term Categories",
+      "labels": "Labels",
+      "total_labels": "Total Labels",
+      "pending_comments": "Pending Comments",
+      "pending_terms": "Pending Terms",
+      "pending_approval": "Pending Approval",
+      "terms_awaiting_review": "Terms Awaiting Review",
+      "users": "Users",
+      "terms": "Terms"
+    },
+    "action": {
+      "manage_users": "Manage Users",
+      "manage_terms": "Manage Terms",
+      "manage_categories": "Manage Categories",
+      "manage_labels": "Manage Labels",
+      "manage_comments": "Manage Comments",
+      "review_terms": "Review Terms",
+      "add_new_term": "Add New Term",
+      "add_new_category": "Add New Category",
+      "add_new_label": "Add New Label",
+      "import_export": "Import/Export Data",
+      "view_all": "View All",
+      "view_respond": "View & Respond",
+      "manage": "Manage",
+      "user_management": "User Management",
+      "term_management": "Term Management",
+      "review": "Review"
+    },
+    "section": {
+      "recent_comments": "Recent Comments",
+      "recently_joined_users": "Recently Joined Users",
+      "terms_pending_approval": "Terms Pending Approval"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "disabled": "Disabled"
+    },
+    "role": {
+      "admin": "Administrator",
+      "user": "User"
+    },
+    "on": "on",
+    "term_id": "Term ID",
+    "latvian_name": "Latvian Name",
+    "english_name": "English Name",
+    "version": "Version",
+    "created": "Created",
+    "actions": "Actions",
+    "no_recent_comments": "No recent comments",
+    "no_recent_users": "No recently joined users",
+    "no_terms_pending_approval": "No terms pending approval",
+    "no_translation": "No translation",
+    "response_singular": "response",
+    "response_plural": "responses",
+    "joined": "Joined",
+    "term_status": "Term Status",
+    "common": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "create": "Create",
+      "actions": "Actions",
+      "search": "Search",
+      "filter": "Filter",
+      "status": "Status",
+      "confirm": "Confirm",
+      "back": "Back",
+      "loading": "Loading...",
+      "no_results": "No results found",
+      "yes": "Yes",
+      "no": "No",
+      "success": "Success!",
+      "error": "Error!",
+      "confirmation": "Are you sure?",
+      "confirmation_delete": "Do you really want to delete this? This action cannot be undone."
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "welcome": "Welcome to the Admin Dashboard",
+      "overview": "Overview",
+      "recent_activity": "Recent Activity",
+      "backToDashboard": "Back to Dashboard",
+      "stats": {
+        "users": "Total Users",
+        "terms": "Total Terms",
+        "pending_terms": "Pending Terms",
+        "comments": "Pending Comments"
+      },
+      "quick_actions": {
+        "title": "Quick Actions",
+        "approve_terms": "Approve Terms",
+        "manage_users": "Manage Users",
+        "moderate_comments": "Moderate Comments",
+        "create_term": "Create New Term"
+      }
+    },
+    "users": {
+      "title": "User Management",
+      "create_user": "Create User",
+      "edit_user": "Edit User",
+      "delete_user": "Delete User",
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "created_at": "Created At",
+        "last_login": "Last Login"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "banned": "Banned",
+        "pending": "Pending"
+      },
+      "roles": {
+        "admin": "Administrator",
+        "editor": "Editor",
+        "user": "User"
+      },
+      "filters": {
+        "all": "All Users",
+        "admins": "Administrators",
+        "editors": "Editors",
+        "standard": "Standard Users"
+      },
+      "actions": {
+        "make_admin": "Make Administrator",
+        "remove_admin": "Remove Administrator Rights",
+        "disable": "Disable Account",
+        "enable": "Enable Account"
+      },
+      "messages": {
+        "user_created": "User created successfully",
+        "user_updated": "User updated successfully",
+        "user_deleted": "User deleted successfully",
+        "cannot_delete_self": "You cannot delete your own account",
+        "cannot_change_own_role": "You cannot change your own role"
+      }
+    },
+    "comments": {
+      "title": "Comment Management",
+      "table": {
+        "author": "Author",
+        "content": "Content",
+        "term": "Term",
+        "date": "Date",
+        "status": "Status"
+      },
+      "status": {
+        "approved": "Approved",
+        "pending": "Pending",
+        "rejected": "Rejected",
+        "closed": "Closed"
+      },
+      "filters": {
+        "all": "All Comments",
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "actions": {
+        "approve": "Approve",
+        "reject": "Reject",
+        "close": "Close",
+        "reopen": "Reopen",
+        "delete": "Delete"
+      },
+      "messages": {
+        "comment_approved": "Comment approved",
+        "comment_rejected": "Comment rejected",
+        "comment_deleted": "Comment deleted",
+        "comment_closed": "Comment closed",
+        "comment_reopened": "Comment reopened"
+      },
+      "empty": "No comments to moderate",
+      "backToDashboard": "Back to Dashboard",
+      "description": "View, respond to, and manage all user comments across the dental terminology platform.",
+      "stats": {
+        "total": "Total Comments",
+        "open": "Open Comments",
+        "resolved": "Resolved Comments"
+      },
+      "unknownTerm": "Unknown Term",
+      "unnamedTerm": "Unnamed Term",
+      "filters": {
+        "title": "Filter Comments",
+        "all": "All Comments",
+        "open": "Open",
+        "resolved": "Resolved"
+      },
+      "status": {
+        "open": "Open",
+        "resolved": "Resolved"
+      },
+      "viewTermLink": "View Term",
+      "adminResponsesTitle": "Admin Responses",
+      "adminFallbackName": "Admin",
+      "adminRoleBadge": "Admin",
+      "emptyState": {
+        "title": "No Comments Found",
+        "all": "There are no comments in the system yet.",
+        "open": "There are no open comments at the moment.",
+        "resolved": "There are no resolved comments yet.",
+        "viewAllButton": "View All Comments"
+      },
+      "toggleButton": {
+        "errorAlert": "Failed to update comment status",
+        "titleReopen": "Reopen comment",
+        "titleResolve": "Mark as resolved",
+        "updating": "Updating...",
+        "reopen": "Reopen",
+        "resolve": "Resolve"
+      }
+    },
+    "pending_terms": {
+      "title": "Pending Terms Review",
+      "description": "Review and approve or reject term drafts before they are published to the public site.",
+      "noTermsTitle": "No Pending Terms",
+      "noTermsDescription": "There are currently no terms waiting for approval.",
+      "table": {
+        "name": "Term Name",
+        "category": "Category",
+        "submitter": "Submitter",
+        "date": "Submission Date"
+      },
+      "review": {
+        "title": "Review Term",
+        "approve": "Approve Term",
+        "reject": "Reject Term",
+        "request_changes": "Request Changes",
+        "feedback": "Feedback"
+      },
+      "status": {
+        "pending": "Pending Review",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "changes_requested": "Changes Requested",
+        "will_be_published": "Will be published after approval"
+      },
+      "messages": {
+        "term_approved": "Term has been approved and published",
+        "term_rejected": "Term has been rejected",
+        "changes_requested": "Changes have been requested",
+        "feedback_sent": "Feedback sent to submitter",
+        "confirmation_delete": "Do you really want to reject this term? This action cannot be undone."
+      },
+      "empty": "No pending terms to review",
+      "comments": {
+        "title": "Admin Comments",
+        "loading": "Loading comments...",
+        "noComments": "No comments yet for this draft term.",
+        "placeholder": "Add an admin comment about this draft...",
+        "submittingButton": "Posting...",
+        "submitButton": "Add Comment"
+      }
+    },
+    "new_term": {
+      "title": "Add New Term",
+      "form": {
+        "term_name": "Term Name",
+        "category": "Category",
+        "definition": "Definition",
+        "lv_translation": "Latvian Translation",
+        "en_translation": "English Translation",
+        "lv_definition": "Latvian Definition",
+        "en_definition": "English Definition",
+        "select_category": "Select Category",
+        "create_category": "Create New Category"
+      },
+      "validation": {
+        "name_required": "Term name is required",
+        "category_required": "Category is required",
+        "definition_required": "Definition in at least one language is required"
+      },
+      "actions": {
+        "create": "Create Term",
+        "save_draft": "Save as Draft",
+        "preview": "Preview"
+      },
+      "messages": {
+        "term_created": "New term created successfully",
+        "draft_saved": "Draft saved successfully",
+        "creation_error": "Error creating term"
+      }
+    },
+    "settings": {
+      "title": "Admin Settings",
+      "sections": {
+        "general": "General Settings",
+        "appearance": "Appearance",
+        "security": "Security",
+        "notifications": "Notifications"
+      },
+      "general": {
+        "site_name": "Site Name",
+        "site_description": "Site Description",
+        "default_language": "Default Language",
+        "contact_email": "Contact Email"
+      },
+      "appearance": {
+        "theme": "Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System Default"
+      },
+      "security": {
+        "login_attempts": "Maximum Login Attempts",
+        "session_timeout": "Session Timeout (minutes)",
+        "password_policy": "Password Policy",
+        "two_factor": "Two-Factor Authentication"
+      },
+      "notifications": {
+        "new_user": "New User Registration",
+        "new_comment": "New Comment",
+        "new_term": "New Term Submission"
+      },
+      "messages": {
+        "settings_saved": "Settings saved successfully",
+        "reset_defaults": "Settings reset to defaults"
+      }
+    }
+  },
+  "AdminNewTerm": {
+    "header": {
+      "home": "Home",
+      "adminPanel": "Admin Panel",
+      "addNewTerm": "Add New Term"
+    },
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "Create New Term Draft",
+    "pageDescription": "Add a new dental terminology entry in both Latvian and English. New terms will be created as drafts and require approval before they appear on the public site.",
+    "loadingForm": "Loading form...",
+    "unnamedCategory": "Unnamed Category",
+    "unnamedLabel": "Unnamed Label",
+    "form": {
+      "termInfoTitle": "Term Information",
+      "requiredFieldsNote": "All fields marked with * are required",
+      "latvianLabel": "Latvian (LV)",
+      "lvNameLabel": "Term Name in Latvian",
+      "lvNamePlaceholder": "Enter Latvian term name",
+      "lvDescriptionLabel": "Description in Latvian",
+      "lvDescriptionPlaceholder": "Enter description in Latvian",
+      "englishLabel": "English (EN)",
+      "enNameLabel": "Term Name in English",
+      "enNamePlaceholder": "Enter English term name",
+      "enDescriptionLabel": "Description in English",
+      "enDescriptionPlaceholder": "Enter description in English",
+      "categoryLabel": "Category",
+      "selectCategoryPlaceholder": "Select a category",
+      "noCategoriesOption": "No categories available",
+      "noCategoriesWarning": "No categories available. Please create categories first.",
+      "categoryHelpText": "The category helps users find terms more easily.",
+      "labelsLabel": "Labels (Optional)",
+      "labelsHelpText": "Select any relevant labels to help with search and grouping.",
+      "noLabelsAvailable": "No labels available.",
+      "draftNotice": "This term will be created as a DRAFT and will require approval before appearing on the public site.",
+      "cancelButton": "Cancel",
+      "submitButton": "Create Term Draft",
+      "submittingButton": "Creating Draft..."
+    },
+    "notifications": {
+      "noCategories": "No categories available. Please create categories first.",
+      "loadCategoriesError": "Failed to load categories",
+      "loadFormDataError": "Failed to load form data",
+      "fillRequiredFields": "Please fill in all required fields",
+      "createSuccess": "Term draft created successfully!",
+      "redirecting": "Redirecting to pending terms...",
+      "createError": "Failed to create term draft",
+      "unexpectedError": "An unexpected error occurred",
+      "errorPrefix": "Error",
+      "fillRequiredLvEn": "Please provide category names in both Latvian and English.",
+      "languageLoadError": "Could not load required language configurations. Please contact support."
+    },
+    "validation": {
+      "lvNameRequired": "Latvian name is required",
+      "enNameRequired": "English name is required",
+      "categoryRequired": "Category is required"
+    },
+    "footer": {
+      "copyright": "© 2025 Dental Terminology. All Rights Reserved."
+    }
+  },
+  "AdminUsersPage": {
+    "header": {
+      "home": "Home",
+      "adminPanel": "Admin Panel",
+      "userManagement": "User Management"
+    },
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "User Management",
+    "pageDescription": "Manage user accounts, roles, and access across the platform.",
+    "stats": {
+      "totalUsers": "Total Users",
+      "administrators": "Administrators",
+      "disabledAccounts": "Disabled Accounts"
+    },
+    "footer": {
+      "copyright": "© 2025 Dental Terminology. All Rights Reserved."
+    }
+  },
+  "AdminUsersSearchFilter": {
+    "searchPlaceholder": "Search by name or email...",
+    "roles": {
+      "all": "All Roles",
+      "admin": "Administrators",
+      "user": "Regular Users"
+    },
+    "searchButton": "Search",
+    "searchingButton": "Searching..."
+  },
+  "AdminUsersTable": {
+    "updatingResults": "Updating results...",
+    "tableHeaders": {
+      "user": "User",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "userIdPrefix": "ID",
+    "roles": {
+      "admin": "Administrator",
+      "user": "Regular User"
+    },
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "showingInfo": "Showing {page} of {pages} pages ({total} results)",
+      "first": "First",
+      "last": "Last"
+    },
+    "alerts": {
+      "cannotRemoveOwnAdmin": "You cannot remove your own admin privileges",
+      "roleUpdateFailed": "Failed to update user role",
+      "cannotDisableOwnAccount": "You cannot disable your own account",
+      "statusUpdateFailed": "Failed to update user status",
+      "cannotDeleteOwnAccount": "You cannot delete your own account",
+      "deleteFailed": "Failed to delete user"
+    }
+  },
+  "AdminDeleteUserModal": {
+    "title": "Delete User Account",
+    "confirmationText": "Are you sure you want to delete {userName}'s account? This action cannot be undone, and all data associated with this account will be permanently removed.",
+    "userInfoTitle": "User Information",
+    "labels": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "user": "Regular User"
+    },
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled"
+    },
+    "warningTitle": "Warning",
+    "warningText": "This will delete all of the user's data, including comments and favorites.",
+    "buttons": {
+      "delete": "Delete User",
+      "deleting": "Deleting...",
+      "cancel": "Cancel"
+    }
+  },
+  "AdminManageTerms": {
+    "title": "Manage Terms",
+    "contentPlaceholder": "Term management interface will be displayed here.",
+    "published": "Published",
+    "draft": "Draft",
+    "archived": "Archived",
+    "categoryFilterPlaceholder": "Filter by Category...",
+    "searchPlaceholder": "Search terms...",
+    "loading": "Loading terms...",
+    "fetchError": "Failed to load terms. Please try again.",
+    "noResults": "No terms found matching your criteria.",
+    "showingResults": "Showing {count} {count, plural, one {result} other {results}}",
+    "unnamedTerm": "Unnamed Term",
+    "uncategorized": "Uncategorized",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}",
+    "categoryFilterLabel": "Filter by Category",
+    "allCategories": "All Categories",
+    "unnamedCategory": "Unnamed Category",
+    "fetchCategoriesError": "Failed to load categories.",
+    "createVersion": "Create New Version",
+    "delete": "Delete",
+    "tableHeaderName": "Name",
+    "tableHeaderCategory": "Category",
+    "tableHeaderStatus": "Status",
+    "tableHeaderVersion": "Version",
+    "tableHeaderCreated": "Created",
+    "tableHeaderActions": "Actions",
+    "createVersionError": "Error creating new version: {error}",
+    "createVersionSuccess": "New draft version created successfully!",
+    "createVersionUnexpectedError": "An unexpected error occurred while creating the new version.",
+    "deleteConfirmation": "Are you sure you want to delete version of \"{name}\"? This cannot be undone.",
+    "deleteError": "Error deleting version: {error}",
+    "deleteSuccess": "Term version deleted successfully!",
+    "deleteUnexpectedError": "An unexpected error occurred while deleting the term version.",
+    "manageVersions": "Manage Versions", 
+    "noTranslation": "No Translation",
+    "manage_terms": "Manage Terms",
+    "add_new_term": "Add New Term",
+    "refresh": "Refresh",
+    "published_terms": "Published terms",
+    "draft_terms": "Draft terms",
+    "archived_terms": "Archived terms",
+    "edit": "Edit",
+    "page": "Page",
+    "of": "of",
+    "description": "Manage all dental terminology entries in the database.",
+    "clearFilters": "Clear Filters",
+    "results": "results",
+    "manageLabels": "Manage Labels",
+    "labelUpdateSuccess": "Labels updated successfully.",
+    "searchOrSelectLabel": "Search or select label...",
+    "nothingFound": "Nothing found.",
+    "alreadyAdded": "(already added)",
+    "addLabel": "Add",
+    "labelAlreadyAddedError": "Label already added to this term.",
+    "managingLabelsFor": "Managing labels for:"
+  },
+  "AdminEditTerm": {
+    "pageTitle": "Edit Term Draft v{version}",
+    "fetchError": "Error fetching term data: {error}",
+    "notDraftError": "Only DRAFT versions can be edited.",
+    "latvianFields": "Latvian Fields",
+    "englishFields": "English Fields",
+    "termNameLabel": "Term Name",
+    "termDescriptionLabel": "Description",
+    "updateSuccessMessage": "Draft updated successfully!",
+    "cancelButton": "Cancel",
+    "saveButton": "Save Changes",
+    "savingButton": "Saving...",
+    "metaTitle": "Edit Term Draft",
+    "backToDrafts": "Back to Drafts",
+    "editingTermTitle": "Editing Draft",
+    "termNamePlaceholder": "Enter term name",
+    "termDescriptionPlaceholder": "Enter description",
+    "errorTitle": "Error",
+    "createPageTitle": "Create New Draft from v{version}",
+    "creatingNewDraftTitle": "Creating New Draft",
+    "createSuccessMessage": "New draft created successfully!"
+  },
+  "AdminManageVersions": {
+    "pageTitle": "Manage Versions",
+    "fetchError": "Error fetching term versions: {error}",
+    "noVersionsFound": "No versions found for this term.",
+    "backToManageTerms": "Back to Manage Terms",
+    "version": "Version",
+    "status": "Status",
+    "createdDate": "Created",
+    "publishedDate": "Published",
+    "archivedDate": "Archived",
+    "actions": "Actions",
+    "restoreButton": "Restore",
+    "restoringButton": "Restoring...",
+    "restoreConfirmation": "Are you sure you want to restore this version? The current published version will be archived.",
+    "restoreError": "Error restoring version:",
+    "restoreSuccess": "Version restored successfully!",
+    "published": "Published",
+    "draft": "Draft",
+    "archived": "Archived",
+    "metaTitle": "Manage Versions for {termName}",
+    "detailsModalTitle": "Details for Version v{version}",
+    "closeModalAriaLabel": "Close modal",
+    "latvianFields": "Latvian Details",
+    "englishFields": "English Details",
+    "termNameLabel": "Name",
+    "termDescriptionLabel": "Description",
+    "noTranslation": "No Translation",
+    "noDescription": "No Description",
+    "closeButton": "Close",
+    "viewDetailsButton": "View Details"
+  },
+  "AdminNewCategory": {
+    "header": {
+      "home": "Home",
+      "adminPanel": "Admin Panel",
+      "addNewCategory": "Add New Category"
+    },
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "Create New Category",
+    "pageDescription": "Add a new category for organizing dental terminology. Categories help users find terms more easily and improve site navigation.",
+    "loadingForm": "Loading form...",
+    "form": {
+      "categoryInfoTitle": "Category Information",
+      "requiredFieldsNote": "Fields marked with * are required.",
+      "nameLabel": "{language} Name",
+      "namePlaceholder": "Enter category name in {language}",
+      "defaultLanguage": "Default",
+      "categoryNote": "Categories will be immediately available for term assignment after creation.",
+      "cancelButton": "Cancel",
+      "submitButton": "Create Category",
+      "submittingButton": "Creating Category..."
+    },
+    "notifications": {
+      "noLanguages": "No languages available.",
+      "loadLanguagesError": "Failed to load languages",
+      "loadFormDataError": "Failed to load form data",
+      "fillRequiredFields": "Please fill in the required fields",
+      "createSuccess": "Category created successfully!",
+      "redirecting": "Redirecting to categories list...",
+      "createError": "Failed to create category",
+      "unexpectedError": "An unexpected error occurred",
+      "errorPrefix": "Error"
+    },
+    "validation": {
+      "nameRequired": "Category name is required for at least one language",
+      "nameRequiredSpecific": "Category name in {language} is required."
+    },
+    "footer": {
+      "copyright": "© 2025 Dental Terminology. All rights reserved."
+    }
+  },
+  "AdminManageCategories": {
+    "title": "Categories Management",
+    "description": "Create, edit and manage categories for dental terminology organization.",
+    "categoriesList": "Categories List",
+    "searchPlaceholder": "Search categories...",
+    "addCategory": "Add Category",
+    "refresh": "Refresh Data",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "previous": "Previous",
+    "next": "Next",
+    "loading": "Loading categories...",
+    "tryAgain": "Try Again",
+    "noCategories": "No Categories Found",
+    "noCategoriesDescription": "There are no categories in the system yet. Create a new category to get started.",
+    "noCategoriesMatching": "No categories matching '{query}'",
+    "clearSearch": "Clear Search",
+    "unnamedCategory": "Unnamed Category",
+    "fetchError": "Failed to load categories. Please try again.",
+    "editSuccess": "Category updated successfully!",
+    "editError": "Failed to update category",
+    "deleteSuccess": "Category deleted successfully!",
+    "deleteError": "Failed to delete category",
+    "unexpectedError": "An unexpected error occurred",
+    "editCategoryTitle": "Edit Category",
+    "deleteConfirmationTitle": "Delete Category",
+    "deleteConfirmationText": "Are you sure you want to delete this category?",
+    "deleteWarning": "This action cannot be undone. Terms in this category must be reassigned or deleted first.",
+    "tableHeaders": {
+      "id": "ID",
+      "name": "Name",
+      "translations": "Languages",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "validation": {
+      "lvNameRequired": "Latvian name is required",
+      "enNameRequired": "English name is required"
+    },
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "categories": "categories",
+    "closeNotification": "Close notification",
+    "closeModal": "Close",
+    "areYouSure": "Are you sure?",
+    "errorTitle": "Error"
+  },
+  "AdminNewLabel": {
+    "pageTitle": "Add New Label",
+    "pageDescription": "Create new labels to categorize and organize terms more effectively. Labels will be available in all configured languages.",
+    "labelName": "Label Name",
+    "header": {
+      "home": "Home",
+      "adminPanel": "Admin Panel",
+      "addNewLabel": "Add New Label"
+    },
+    "form": {
+      "labelInfoTitle": "Label Information",
+      "requiredFieldsNote": "Label name is required for at least one language.",
+      "cancelButton": "Cancel",
+      "languageInputLabel": "Label Name in {languageName} ({languageCode})",
+      "inputPlaceholder": "Enter label name in {languageName}"
+    },
+    "notifications": {
+      "createSuccess": "Label created successfully!",
+      "createError": "Failed to create label.",
+      "validationError": "Validation failed. Please check the fields.",
+      "generalError": "An unexpected error occurred."
+    }
+  },
+  "AdminManageLabels": {
+    "title": "Manage Labels",
+    "description": "View, edit, and delete labels used for term organization. Ensure labels are clear and consistently applied across languages.",
+    "addNewLabelButton": "Add New Label",
+    "tableHeaders": {
+      "id": "ID",
+      "name": "Name",
+      "translations": "Translations",
+      "termsUsing": "Terms Using",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "editModalTitle": "Edit Label",
+    "deleteModalTitle": "Delete Label",
+    "deleteConfirmationText": "Are you sure you want to delete the label \"{labelName}\"? This action cannot be undone.",
+    "deleteWarningInUse": "This label is currently used by {count} term(s) and cannot be deleted. Please remove it from all terms first.",
+    "noLabelsFound": "No labels found.",
+    "searchPlaceholder": "Search labels...",
+    "loadingLabels": "Loading labels...",
+    "notifications": {
+      "loadError": "Failed to load labels.",
+      "updateSuccess": "Label updated successfully!",
+      "updateError": "Failed to update label.",
+      "deleteSuccess": "Label deleted successfully!",
+      "deleteError": "Failed to delete label."
+    }
+  }
+}
