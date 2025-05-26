@@ -233,7 +233,10 @@
       "added": "Comment added successfully",
       "deleted": "Comment deleted successfully",
       "error": "An error occurred. Please try again."
-    }
+    },
+    "category_not_available": "Category not available",
+    "category_heading": "Category",
+    "labels_heading": "Labels"
   },
   "admin": {
     "title": "Admin Panel",

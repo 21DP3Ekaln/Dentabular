@@ -235,7 +235,10 @@
       "added": "Komentārs veiksmīgi pievienots",
       "deleted": "Komentārs veiksmīgi dzēsts",
       "error": "Radās kļūda. Lūdzu, mēģiniet vēlreiz."
-    }
+    },
+    "category_not_available": "Kategorija nav pieejama",
+    "category_heading": "Kategorija",
+    "labels_heading": "Iezīmes"
   },
   "admin": {
     "title": "Administrācijas panelis",

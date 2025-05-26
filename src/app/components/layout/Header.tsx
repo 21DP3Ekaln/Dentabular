@@ -139,12 +139,6 @@ export default function Header() {
             >
               {t('navigation.favorites')}
             </LocaleLink>
-            <LocaleLink
-              href="/recently_added"
-              className="text-[#eaeaea] hover:text-[#58a6ff] transition-colors relative px-2 whitespace-nowrap text-sm md:text-base after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#58a6ff] after:transition-all hover:after:w-full"
-            >
-              {t('navigation.recently_added')}
-            </LocaleLink>
           </nav>
 
           <div className="flex items-center space-x-4 flex-shrink-0">
@@ -270,12 +264,6 @@ export default function Header() {
               className="block text-[#eaeaea] hover:text-[#58a6ff] py-2 transition-colors"
             >
               {t('navigation.favorites')}
-            </LocaleLink>
-            <LocaleLink
-              href="/recently_added"
-              className="block text-[#eaeaea] hover:text-[#58a6ff] py-2 transition-colors"
-            >
-              {t('navigation.recently_added')}
             </LocaleLink>
             {/* Mobile Language Switcher could go here if needed */}
             {/* <div className="pt-2 border-t border-[#30364a]">

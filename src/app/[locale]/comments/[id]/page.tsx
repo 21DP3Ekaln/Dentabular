@@ -39,12 +39,34 @@ export default async function CommentPage({ params }: { params: Promise<{ locale
           include: {
             translations: {
               include: {
-                language: true
-              }
-            }
-          }
-        }
-      }
+                language: true,
+              },
+            },
+          },
+        },
+        category: {
+          include: {
+            translations: {
+              include: {
+                language: true,
+              },
+            },
+          },
+        },
+        labels: { // TerminiLabel
+          include: {
+            label: { // Label
+              include: {
+                translations: {
+                  include: {
+                    language: true,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     }),
     prisma.comment.findMany({
       where: {
@@ -88,6 +110,19 @@ export default async function CommentPage({ params }: { params: Promise<{ locale
   const lvTranslation = term.activeVersion?.translations.find(t => t.language.code === 'lv')
   const engTranslation = term.activeVersion?.translations.find(t => t.language.code === 'en')
 
+  // Get category translation
+  const categoryName = term.category?.translations.find(t => t.language.code === locale)?.name ||
+                       term.category?.translations.find(t => t.language.code === 'en')?.name ||
+                       term.category?.translations[0]?.name || // Fallback to any available
+                       t('category_not_available', { defaultValue: 'Category not available' });
+
+  // Get label translations
+  const labelNames = term.labels?.map(terminiLabel => {
+    return terminiLabel.label.translations.find(t => t.language.code === locale)?.name ||
+           terminiLabel.label.translations.find(t => t.language.code === 'en')?.name ||
+           terminiLabel.label.translations[0]?.name // Fallback to any available
+  }).filter(name => name) as string[] || []
+
   return (
     <div className="min-h-screen bg-[#0b0f23] text-[#eaeaea]">
       <div className="max-w-5xl mx-auto p-6">
@@ -118,6 +153,29 @@ export default async function CommentPage({ params }: { params: Promise<{ locale
               <h2 className="text-[#58a6ff] text-3xl font-bold mb-3">{engTranslation?.name || 'No translation'}</h2>
               <p className="text-gray-300 leading-relaxed">{engTranslation?.description || 'No description available'}</p>
             </div>
+          </div>
+
+          {/* Category and Labels Section */}
+          <div className="mt-6 pt-6 border-t border-[#2a3349]">
+            {term.category && (
+              <div className="mb-4">
+                <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">{t('category_heading', { defaultValue: 'Category' })}</h3>
+                <p className="text-lg text-[#eaeaea]">{categoryName}</p>
+              </div>
+            )}
+
+            {labelNames.length > 0 && (
+              <div>
+                <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">{t('labels_heading', { defaultValue: 'Labels' })}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {labelNames.map((name, index) => (
+                    <span key={index} className="px-3 py-1 bg-[#58a6ff]/10 text-[#58a6ff] text-sm rounded-full">
+                      {name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
