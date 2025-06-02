@@ -19,7 +19,7 @@ export default async function CommentPage({ params }: { params: Promise<{ locale
   const session = await auth()
 
   if (!session?.user) {
-    redirect("/profile")
+    redirect(`/${locale}/profile`)
   }
 
   const userEmail = session.user.email ?? undefined

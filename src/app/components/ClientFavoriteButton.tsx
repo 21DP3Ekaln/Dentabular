@@ -59,18 +59,9 @@ export default function ClientFavoriteButton({
     }
   };
 
-  // If user is not authenticated, show a disabled button
+  // If user is not authenticated, do not show the button
   if (status === 'unauthenticated') {
-    return (
-      <button
-        disabled
-        className="flex items-center space-x-2 text-sm font-medium text-gray-300 opacity-50 cursor-not-allowed"
-        title={t('term_view.sign_in_to_add')}
-      >
-        <HeartOutline className="h-5 w-5 text-gray-400" />
-        <span className="hidden sm:inline">{t('term_view.add_to_favorites')}</span>
-      </button>
-    );
+    return null;
   }
 
   return (

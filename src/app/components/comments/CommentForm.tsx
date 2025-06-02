@@ -8,17 +8,23 @@ export default function CommentForm({ termId}: { termId: number, locale: string 
   const t = useTranslations('comments')
   const [content, setContent] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!content.trim()) return
+    setErrorMessage(null) // Clear previous errors
 
     try {
       setIsSubmitting(true)
       await addComment(termId, content)
       setContent('')
-    } catch (error) {
-      console.error('Failed to add comment:', error)
+    } catch (error: unknown) {
+      if (error instanceof Error && error.message === 'User account is disabled. Cannot add comment.') {
+        setErrorMessage(t('disabled_account_error'))
+      } else {
+        setErrorMessage(t('generic_error'))
+      }
     } finally {
       setIsSubmitting(false)
     }
@@ -26,6 +32,11 @@ export default function CommentForm({ termId}: { termId: number, locale: string 
 
   return (
     <form onSubmit={handleSubmit} className="w-full">
+      {errorMessage && (
+        <div className="mb-4 p-3 bg-red-500/20 border border-red-700 text-red-400 rounded-md">
+          {errorMessage}
+        </div>
+      )}
       <div className="relative">
         <textarea
           value={content}

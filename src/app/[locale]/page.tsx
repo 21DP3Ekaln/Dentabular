@@ -185,7 +185,7 @@ export default function HomePage() {
 
   const toggleFavorite = async (termId: number) => {
     if (!session?.user) {
-      router.push('/profile');
+      router.push(`/${locale}/profile`);
       return;
     }
 
@@ -446,22 +446,24 @@ export default function HomePage() {
                   {/* Actions footer */}
                   <div className="bg-[#10142a]/40 border-t border-[#30364a] p-4 flex justify-between items-center relative">
                     <div className="flex items-center space-x-4">
-                      <button
-                        onClick={() => toggleFavorite(term.id)}
-                        className="flex items-center space-x-2 text-sm font-medium text-gray-300 hover:text-[#58a6ff] transition-colors"
-                      >
-                        {favoriteIds.has(term.id) ? (
-                          <>
-                            <HeartIconSolid className="h-5 w-5 text-red-500" />
-                            <span className="hidden sm:inline">{t('term_view.favorited')}</span>
-                          </>
-                        ) : (
-                          <>
-                            <HeartIcon className="h-5 w-5 text-gray-400 hover:text-red-500" />
-                            <span className="hidden sm:inline">{t('term_view.add_to_favorites')}</span>
-                          </>
-                        )}
-                      </button>
+                      {session?.user ? (
+                        <button
+                          onClick={() => toggleFavorite(term.id)}
+                          className="flex items-center space-x-2 text-sm font-medium text-gray-300 hover:text-[#58a6ff] transition-colors"
+                        >
+                          {favoriteIds.has(term.id) ? (
+                            <>
+                              <HeartIconSolid className="h-5 w-5 text-red-500" />
+                              <span className="hidden sm:inline">{t('term_view.favorited')}</span>
+                            </>
+                          ) : (
+                            <>
+                              <HeartIcon className="h-5 w-5 text-gray-400 hover:text-red-500" />
+                              <span className="hidden sm:inline">{t('term_view.add_to_favorites')}</span>
+                            </>
+                          )}
+                        </button>
+                      ) : null}
                       
                       {/* Interactive Label Display from TermCard, adapted for HomePage */}
                       {(term.labels && term.labels.length > 0) && (() => {
@@ -587,19 +589,21 @@ export default function HomePage() {
                       </p>
                       <div className="flex justify-between items-center mt-2 pt-2 border-t border-[#30364a]/50">
                         <span className="text-xs bg-[#263354] text-[#64d8cb] px-2 py-0.5 rounded-full">{t('term_view.new')}</span>
-                        <button
-                          onClick={(e) => {
-                            e.preventDefault();
-                            toggleFavorite(term.id);
-                          }}
-                          className="text-gray-400"
-                        >
-                          {favoriteIds.has(term.id) ? (
-                            <HeartIconSolid className="h-4 w-4 text-red-500" />
-                          ) : (
-                            <HeartIcon className="h-4 w-4 hover:text-red-500" />
-                          )}
-                        </button>
+                        {session?.user ? (
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              toggleFavorite(term.id);
+                            }}
+                            className="text-gray-400"
+                          >
+                            {favoriteIds.has(term.id) ? (
+                              <HeartIconSolid className="h-4 w-4 text-red-500" />
+                            ) : (
+                              <HeartIcon className="h-4 w-4 hover:text-red-500" />
+                            )}
+                          </button>
+                        ) : null}
                       </div>
                     </div>
                   </LocaleLink>

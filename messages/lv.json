@@ -159,8 +159,9 @@
     "edit": "Rediģēt",
     "delete": "Dzēst",
     "error": {
-      "noLanguagesConfigured": "Sistēmā nav konfigurētu valodu. Lūdzu, sazinieties ar administratoru."
+    "noLanguagesConfigured": "Sistēmā nav konfigurētu valodu. Lūdzu, sazinieties ar administratoru."
     },
+    "refresh": "Atsvaidzināt",
     "tryAgain": "Mēģināt vēlreiz",
     "loading": "Ielādē...",
     "saving": "Saglabā...",
@@ -238,7 +239,12 @@
     },
     "category_not_available": "Kategorija nav pieejama",
     "category_heading": "Kategorija",
-    "labels_heading": "Iezīmes"
+    "labels_heading": "Iezīmes",
+    "disabled_account_error": "Jūsu konts ir atspējots. Jūs nevarat pievienot komentārus.",
+    "generic_error": "Pievienojot komentāru, radās kļūda. Lūdzu, mēģiniet vēlreiz."
+  },
+  "errors": {
+    "generic_comment_error": "Pievienojot komentāru, radās kļūda. Lūdzu, mēģiniet vēlreiz."
   },
   "admin": {
     "title": "Administrācijas panelis",
@@ -505,7 +511,8 @@
         "noComments": "Nav komentāru šim melnrakstam.",
         "placeholder": "Pievienojiet administrātora komentāru šim melnrakstam...",
         "submittingButton": "Veic izmaiņas",
-        "submitButton": "Pievienot komentāru"
+        "submitButton": "Pievienot komentāru",
+        "disabled_account_error": "Jūsu konts ir atspējots. Jūs nevarat pievienot komentārus."
       }
     },
     "new_term": {

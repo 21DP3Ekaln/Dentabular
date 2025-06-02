@@ -47,6 +47,19 @@ export async function getFavorites() {
                 }
               }
             }
+          },
+          labels: { 
+            include: {
+              label: {
+                include: {
+                  translations: {
+                    include: {
+                      language: true
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -160,4 +173,4 @@ export async function isFavorited(termId: number) {
     console.error('Error checking favorite status:', error)
     return { favorited: false }
   }
-} 
+}

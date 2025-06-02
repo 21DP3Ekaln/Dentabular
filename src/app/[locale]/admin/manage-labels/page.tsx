@@ -4,8 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { 
   TagIcon, 
-  ArrowLeftIcon,
-  PlusCircleIcon
+  ArrowLeftIcon
 } from '@heroicons/react/24/outline';
 import LocaleLink from '@/app/components/LocaleLink';
 import ManageLabelsClient from '@/app/components/admin/manage-labels/ManageLabelsClient';
@@ -13,12 +12,13 @@ import { getLanguages as getEnabledLanguages } from '@/lib/i18n-utils'; // Added
 import type { Language as LanguageType } from '@/types/i18n'; // Added import for type
 
 interface Props {
-  params: { locale: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: { locale: string } | Promise<{ locale: string }>; // Adjusting type to reflect potential promise
+  searchParams?: { [key: string]: string | string[] | undefined } | Promise<{ [key: string]: string | string[] | undefined } | undefined>; // Adjusting type
 }
 
-export default async function ManageLabelsPage({ params, searchParams }: Props) {
-  const { locale } = params;
+export default async function ManageLabelsPage({ params: paramsProp, searchParams: searchParamsProp }: Props) {
+  const resolvedParams = await paramsProp;
+  const { locale } = resolvedParams;
   setRequestLocale(locale);
   
   const t = await getTranslations({ locale }); // For AdminManageLabels and navigation
@@ -37,8 +37,9 @@ export default async function ManageLabelsPage({ params, searchParams }: Props) 
   }
 
   // Pass searchParams to the client component for it to handle fetching/filtering
-  const currentPage = typeof searchParams?.page === 'string' ? parseInt(searchParams.page) : 1;
-  const currentSearchQuery = typeof searchParams?.search === 'string' ? searchParams.search : "";
+  const resolvedSearchParams = await searchParamsProp;
+  const currentPage = typeof resolvedSearchParams?.page === 'string' ? parseInt(resolvedSearchParams.page) : 1;
+  const currentSearchQuery = typeof resolvedSearchParams?.search === 'string' ? resolvedSearchParams.search : "";
 
   let availableLanguages: Pick<LanguageType, "id" | "code" | "name">[] = [];
   try {
@@ -80,13 +81,6 @@ export default async function ManageLabelsPage({ params, searchParams }: Props) 
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 mt-4 md:mt-0">
-                <LocaleLink
-                  href="/admin/new-label"
-                  className="bg-[#58a6ff] hover:bg-[#4393e6] text-white px-4 py-2.5 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl"
-                >
-                  <PlusCircleIcon className="h-5 w-5" />
-                  {t('AdminManageLabels.addNewLabelButton')}
-                </LocaleLink>
                 <LocaleLink
                   href="/admin"
                   className="bg-[#1a2239]/80 hover:bg-[#1a2239] text-white px-4 py-2.5 rounded-lg border border-[#30364a] flex items-center justify-center gap-2 transition-all shadow-lg group"

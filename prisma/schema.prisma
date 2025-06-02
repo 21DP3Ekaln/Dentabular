@@ -6,6 +6,7 @@
 //npx prisma db push 
 //npx prisma studio
 //jpork2021@gmail.com
+//JohnPorkh123$
 //npx ts-node --compiler-options '{"module":"CommonJS"}' src/lib/import-termini.ts - populate the database
 
 generator client {

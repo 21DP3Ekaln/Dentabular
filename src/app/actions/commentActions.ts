@@ -58,6 +58,10 @@ export async function addComment(termId: number, content: string) {
     throw new Error('User not found')
   }
 
+  if (user.isDisabled) {
+    throw new Error('User account is disabled. Cannot add comment.')
+  }
+
   await prisma.comment.create({
     data: {
       content,

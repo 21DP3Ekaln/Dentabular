@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl'; 
 
 type Term = {
   id: number;
@@ -36,6 +36,17 @@ type Term = {
       };
     }[];
   };
+  labels: { // Added labels definition
+    label: {
+      id: number;
+      translations: {
+        name: string;
+        language: {
+          code: string;
+        };
+      }[];
+    };
+  }[];
 };
 
 // Add proper type definitions for jspdf-autotable
@@ -65,6 +76,7 @@ export default function ExportFavoritesPDF() {
   const [isExporting, setIsExporting] = useState(false);
   const [fontLoaded, setFontLoaded] = useState(false); // Tracks if the font has been fetched and added
   const t = useTranslations();
+  const locale = useLocale(); // Get current locale
 
   // Load the custom font that supports Latvian characters
   useEffect(() => {
@@ -213,8 +225,29 @@ export default function ExportFavoritesPDF() {
         const engDesc = term.activeVersion?.translations.find(t => t.language.code === 'en')?.description || t('term_view.no_description');
         const eng_lines = doc.splitTextToSize(engDesc, 175);
         doc.text(eng_lines, 14, yPos);
-        yPos += (eng_lines.length * 5) + 15;
+        yPos += (eng_lines.length * 5) + 7; // Adjusted spacing
+
+        // Add Labels
+        if (term.labels && term.labels.length > 0) {
+          doc.setFontSize(10);
+          doc.setTextColor(50, 50, 50); // Darker gray for label title
+          doc.text(`${t('labels.labels')}:`, 14, yPos);
+          yPos += 5;
+
+          doc.setFontSize(9);
+          doc.setTextColor(80, 80, 80); // Slightly lighter gray for label names
+          const labelNames = term.labels.map(termLabel => {
+            const translation = termLabel.label.translations.find(lt => lt.language.code === locale) || termLabel.label.translations.find(lt => lt.language.code === 'en');
+            return translation ? translation.name : t('labels.no_labels'); // Fallback if no translation found
+          }).join(', ');
+          
+          const label_lines = doc.splitTextToSize(labelNames, 175);
+          doc.text(label_lines, 14, yPos);
+          yPos += (label_lines.length * 4.5) + 7; // Adjusted spacing
+        }
         
+        yPos += 8; // Extra space before separator or end of term block
+
         // Add separator between terms
         if (index < favorites.length - 1) {
           doc.setDrawColor(220, 220, 220);

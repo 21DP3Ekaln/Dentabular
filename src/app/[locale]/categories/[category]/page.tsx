@@ -348,7 +348,7 @@ export default function CategoryPage({ params }: { params: Promise<CategoryParam
                       </div>
                       
                       <LocaleLink
-                        href={`/term/${term.identifier}`}
+                        href={`/comments/${term.id}`}
                         className="flex items-center space-x-2 bg-gradient-to-r from-[#58a6ff] to-[#4393e6] text-white px-3 py-1.5 rounded-lg hover:shadow-lg transition-all text-sm font-medium"
                       >
                         <BookOpenIcon className="h-4 w-4" />

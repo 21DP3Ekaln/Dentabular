@@ -157,8 +157,9 @@
     "edit" : "Edit",
     "delete": "Delete",
     "error": {
-      "noLanguagesConfigured": "No languages are configured in the system. Please contact an administrator."
+    "noLanguagesConfigured": "No languages are configured in the system. Please contact an administrator."
     },
+    "refresh": "Refresh",
     "tryAgain": "Try Again",
     "loading": "Loading...",
     "saving": "Saving...",
@@ -236,7 +237,12 @@
     },
     "category_not_available": "Category not available",
     "category_heading": "Category",
-    "labels_heading": "Labels"
+    "labels_heading": "Labels",
+    "disabled_account_error": "Your account is disabled. You cannot post comments.",
+    "generic_error": "An error occurred while posting your comment. Please try again."
+  },
+  "errors": {
+    "generic_comment_error": "An error occurred while posting the comment. Please try again."
   },
   "admin": {
     "title": "Admin Panel",
@@ -503,7 +509,8 @@
         "noComments": "No comments yet for this draft term.",
         "placeholder": "Add an admin comment about this draft...",
         "submittingButton": "Posting...",
-        "submitButton": "Add Comment"
+        "submitButton": "Add Comment",
+        "disabled_account_error": "Your account is disabled. You cannot post comments."
       }
     },
     "new_term": {
